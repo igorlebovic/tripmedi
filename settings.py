@@ -1,4 +1,5 @@
 # Django settings for tripmedi project.
+import os
 import sqlite3
 
 DEBUG = True
@@ -78,7 +79,9 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'tripmedi.urls'
 
-TEMPLATE_DIRS = ('/home/ravi/PycharmProjects/tripmedi/templates',)
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+# TEMPLATE_DIRS = ('/home/ravi/PycharmProjects/tripmedi/templates',)
+TEMPLATE_DIRS = (PROJECT_ROOT + '/templates',)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
