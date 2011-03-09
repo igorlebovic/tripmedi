@@ -48,6 +48,7 @@ class Provider(models.Model):
     last_accredited = models.DateTimeField()
     city = models.CharField(max_length=50)
     provider_region_rank = models.IntegerField()
+    provider_url = models.CharField(max_length=300)
 
 
 # The medical procedure
