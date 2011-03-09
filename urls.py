@@ -7,5 +7,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^', include('tripmedi.app.urls')),
+    (r'^', include('tripmedi.socialauth.urls')),
     (r'^(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 )
