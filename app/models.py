@@ -33,6 +33,11 @@ class Country(models.Model):
     ISO_3166_2_code = models.CharField(max_length=20)
 
 
+class CountryRegion(models.Model):
+    country = models.ForeignKey(Country)
+    region_name = models.CharField(max_length=75)
+
+
 class CountryExchangeRate(models.Model):
     country = models.ForeignKey(Country)
     exchange_rate = models.DecimalField(max_digits=19,decimal_places=8)
@@ -86,7 +91,7 @@ class ProviderSurgeon(models.Model):
 
 
 class ProviderSurgeonLanguage(models.Model):
-    provider_surgeon = models.ForeignKey(ProviderSurgeon)
+    providersurgeon = models.ForeignKey(ProviderSurgeon)
     language = models.CharField(max_length=50)
     language_skill = models.CharField(max_length=50)
 
