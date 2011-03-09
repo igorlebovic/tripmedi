@@ -1,0 +1,208 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 33, ../src/uberbutton.sass */
+.uberbutton {
+  behavior: url(/css3pie/PIE.htc);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  height: auto;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px inset,rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px inset,rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px inset,rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px inset,rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+/* line 51, ../src/uberbutton.sass */
+.uberbutton:link, .uberbutton:visited {
+  margin-right: 10px;
+  line-height: 150%;
+}
+/* line 55, ../src/uberbutton.sass */
+.uberbutton:active {
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  -moz-transform: translate(0, 2px);
+  -webkit-transform: translate(0, 2px);
+  -o-transform: translate(0, 2px);
+  transform: translate(0, 2px);
+}
+/* line 59, ../src/uberbutton.sass */
+.uberbutton img {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+/* line 110, ../src/uberbutton.sass */
+.button1 {
+  background-color: #1c689c;
+  background-image: url('/images/noise.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #2386b9), color-stop(100%, #154b7f));
+  background-image: url('/images/noise.png'), -moz-linear-gradient(top, #2386b9 0%, #154b7f 100%);
+  background-image: url('/images/noise.png'), linear-gradient(top, #2386b9 0%, #154b7f 100%);
+  -pie-background: linear-gradient(#2386b9, #154b7f);
+  border: 1px solid #0c2c4a;
+  text-shadow: black 0 -1px 0;
+  color: white;
+  color: white;
+}
+/* line 85, ../src/uberbutton.sass */
+.button1:link, .button1:visited {
+  color: white;
+  border: 1px solid #0c2c4a;
+}
+/* line 89, ../src/uberbutton.sass */
+.button1:hover {
+  background-color: #1f73ad;
+  -pie-background: linear-gradient(#2692ca, #185591);
+  background-image: url('/images/noise.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #2692ca), color-stop(100%, #185591));
+  background-image: url('/images/noise.png'), -moz-linear-gradient(top, #2692ca 0%, #185591 100%);
+  background-image: url('/images/noise.png'), linear-gradient(top, #2692ca 0%, #185591 100%);
+  color: white;
+  border: 1px solid #0c2c4a;
+}
+/* line 99, ../src/uberbutton.sass */
+.button1:active {
+  background-color: #195d8a;
+  -pie-background: linear-gradient(#207aa8, #12416d);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #154b7f), color-stop(100%, #2386b9));
+  background-image: -moz-linear-gradient(top, #154b7f 0%, #2386b9 100%);
+  background-image: linear-gradient(top, #154b7f 0%, #2386b9 100%);
+  text-shadow: black 0 1px 0;
+  color: white;
+}
+/* line 106, ../src/uberbutton.sass */
+.button1:focus {
+  -moz-box-shadow: #2386b9 0 0 10px 0;
+  -webkit-box-shadow: #2386b9 0 0 10px 0;
+  -o-box-shadow: #2386b9 0 0 10px 0;
+  box-shadow: #2386b9 0 0 10px 0;
+}
+
+/* line 113, ../src/uberbutton.sass */
+.button2 {
+  background-color: #f8d163;
+  background-image: url('/images/noise.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffe497), color-stop(100%, #f2bf2f));
+  background-image: url('/images/noise.png'), -moz-linear-gradient(top, #ffe497 0%, #f2bf2f 100%);
+  background-image: url('/images/noise.png'), linear-gradient(top, #ffe497 0%, #f2bf2f 100%);
+  -pie-background: linear-gradient(#ffe497, #f2bf2f);
+  border: 1px solid #d6a20d;
+  text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+  color: #584204;
+  color: #584204;
+}
+/* line 85, ../src/uberbutton.sass */
+.button2:link, .button2:visited {
+  color: #584204;
+  border: 1px solid #d6a20d;
+}
+/* line 89, ../src/uberbutton.sass */
+.button2:hover {
+  background-color: #f9d776;
+  -pie-background: linear-gradient(#ffe9ab, #f3c542);
+  background-image: url('/images/noise.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffe9ab), color-stop(100%, #f3c542));
+  background-image: url('/images/noise.png'), -moz-linear-gradient(top, #ffe9ab 0%, #f3c542 100%);
+  background-image: url('/images/noise.png'), linear-gradient(top, #ffe9ab 0%, #f3c542 100%);
+  color: #584204;
+  border: 1px solid #d6a20d;
+}
+/* line 99, ../src/uberbutton.sass */
+.button2:active {
+  background-color: #f8cc4f;
+  -pie-background: linear-gradient(#ffdf83, #f1b91c);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f2bf2f), color-stop(100%, #ffe497));
+  background-image: -moz-linear-gradient(top, #f2bf2f 0%, #ffe497 100%);
+  background-image: linear-gradient(top, #f2bf2f 0%, #ffe497 100%);
+  text-shadow: rgba(255, 255, 255, 0.7) 0 -1px 0;
+  color: #584204;
+}
+/* line 106, ../src/uberbutton.sass */
+.button2:focus {
+  -moz-box-shadow: #ffe497 0 0 10px 0;
+  -webkit-box-shadow: #ffe497 0 0 10px 0;
+  -o-box-shadow: #ffe497 0 0 10px 0;
+  box-shadow: #ffe497 0 0 10px 0;
+}
+
+body {
+	margin: 0; padding: 0;
+	font:  15px/150% 'Helvetica Neue', Arial;
+	background: black url(ahttp://farm4.static.flickr.com/3442/3848164604_108d36ea1a_b.jpg) fixed no-repeat 50% 20%;
+	height: 100%;
+}
+
+h1 {
+	font-size:  30px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.container {
+	position: relative;
+	width: 350px;
+	margin: 10% auto 0;
+	padding: 40px;
+	background: #fff;
+	background: rgba(255,255,255,0.9);
+	color:  #000;
+	border: 1px solid rgba(0,0,0,1);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 5px 1px 5px #fff;	
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8), 0 1px 0 #fff inset;		
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8), 0 1px 0 #fff inset;		
+	text-shadow: 0 -1px rgba(255,255,255,0.5);
+	-moz-text-shadow: 0 -1px rgba(255,255,255,0.5);
+	-webkit-text-shadow: 0 -1px rgba(255,255,255,0.5);	
+}
+
+.i-text {
+	font-size:  20px;
+	font-family: inherit;
+	padding: 10px;
+	border: 1px solid #666;
+	width:  300px;
+}
+
+.button1 {
+	margin-top:  10px;
+	font-size:  20px;
+	font-family: inherit;
+}
+
+label {
+	display: block;
+	font-weight:  bold;
+	margin-bottom: 3px;
+}
+
+.background {width:1200px; height:863px; margin:0 auto;}
+.background {top: -10%; left: 0px; min-height: 950px; width:100%; overflow:hidden; z-index:-1; -moz-user-select: none; position:fixed !important; position: absolute; bottom: 0}
+.background img {position:absolute; left:0; top:0; z-index:-2; min-width: 1200px; width: 100%}

@@ -45,11 +45,17 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
+<<<<<<< HEAD
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 # PROJECT_ROOT = '/Users/igorlebovic/tripmedi/'
 MEDIA_ROOT = PROJECT_ROOT + '/static/'
+=======
+MEDIA_ROOT = (PROJECT_ROOT + '/static',)
+>>>>>>> 49db3f173cf72d67fc8d7b3602333c6e14a28405
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
