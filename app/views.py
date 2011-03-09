@@ -10,3 +10,7 @@ def index(request):
 def procedure(request, procedure_name, template_name="procedure.html"):
     page_title = 'Procedure'
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+def search(request, procedure_name, template_name="search.html"):
+    page_title = 'Search'
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
