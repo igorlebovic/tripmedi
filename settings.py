@@ -45,6 +45,8 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = (PROJECT_ROOT + '/static',)
@@ -79,7 +81,6 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'tripmedi.urls'
 
-PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 # TEMPLATE_DIRS = ('/home/ravi/PycharmProjects/tripmedi/templates',)
 TEMPLATE_DIRS = (PROJECT_ROOT + '/templates',)
 
