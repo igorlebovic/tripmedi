@@ -102,5 +102,7 @@ class UserProviderProcedureSearch(models.Model):
     provider = models.ForeignKey(Provider)
     procedure = models.ForeignKey(Procedure)
     airfare_API = models.CharField(max_length=500)
+    airfare_price = models.DecimalField(max_digits=10,decimal_places=2)
     hotel_API = models.CharField(max_length=500)
+    hotel_price = models.DecimalField(max_digits=10,decimal_places=2)
     searched_on_datetime = models.DateTimeField(auto_now_add=True)
