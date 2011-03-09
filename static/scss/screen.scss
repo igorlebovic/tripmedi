@@ -1,0 +1,128 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$color1: #8EC6E1;
+$color2: #3B7EC1;
+$color3: #0A4874;
+
+$font1: 1em;
+$font2: 1.3077em;
+$font3: 1.6154em;
+$font4: 2.1154em;
+$font5: 2.6154em;
+
+@import "compass/reset";
+@import "compass";
+@import "blueprint";
+@import "blueprint/grid";
+
+$blueprint-grid-columns: 12;
+$blueprint-grid-width: 60px;
+$blueprint-grid-margin: 20px;
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
+
+h1 {
+	font-size: $font4;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: $font3;
+	font-weight: bold;	
+}
+
+h3 {
+	font-size:  $font2;
+	font-weight: bold;	
+}
+
+body {
+	font: 13px/1.25 'Helvetica Neue', Arial;
+}
+
+a, a:link {
+	color: $color2;
+	text-decoration: none;
+}
+
+	a:hover {
+		color: $color2;
+		text-decoration: underline;
+	}
+
+
+
+
+.master-container {
+	@include container;
+	padding-left:  10px;
+	
+	background: url(../images/grid.gif) 0 0 repeat-y;
+	
+	aside {
+		@include column(3);
+		width:  240px;
+		margin-left:  -10px;
+		margin-right: 10px;		
+	}
+	
+	.content-area {
+		@include column(9, true);
+	}
+}
+
+
+header {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+	header .logo {
+		float:  left;
+		font-size:  $font4;
+		letter-spacing: -1px;
+		font-weight: bold;
+		
+	}
+	
+	nav li {
+		float:  left;
+		padding:  10px 0 0;
+		margin: 0 10px;
+	}
+	
+	
+	nav li a {
+		font-weight: bold;
+	}
+	
+	.nav-aux {
+		position: absolute;
+		top: 0;
+		right:  0;
+		width:  auto;
+	}
+	
+
+aside > div {
+	padding: 10px;
+	background-color: #fafafa;
+	margin: 0 0 10px;
+	color: #fff;
+	
+	h3 {
+		margin: -10px -10px 0;
+		padding: 5px;
+		background-color: $color1;
+		line-height: 1;
+	}
+}
+	
+
+
+h1 {
+	font-weight: bold;
+}
+
