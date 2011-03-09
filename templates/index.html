@@ -1,1 +1,76 @@
-this is the index template
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>tripMedi</title>
+  <link rel="stylesheet" href="splash/splash-style.css" />  
+  <script src="//cdn.optimizely.com/js/5837028.js"></script>
+
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<style>
+		h1 {
+			line-height: 1.1;
+		}
+
+		.nospam {
+		  color: #666;
+		  font-size: 11px;
+		  line-height: 14px;	
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="background">
+	<img src="splash/bg1.jpg">
+	</div>
+
+  <div class="container">
+	<h1><span style="font-size: 40px;">Medical tourism <br>you can trust.</span></h1>
+	<p>We take all of the information available online relating to medical tourism - provider experience, quality of facility, prices, distance - and  put it in a simple format that anyone can understand.</p>
+	<form action="https://spreadsheets.google.com/formResponse?formkey=dHUwQURQQk83b0lpOExUSHNkN2FvbWc6MQ&amp;ifq" method="POST" id="ss-form"> 
+
+	<br> 
+
+	<label class="ss-q-title" for="entry_0">Enter your email address</label>
+	<input type="text" name="entry.0.single" value="" class="ss-q-short i-text" id="entry_0"><br />
+	<div class="nospam">Enter you email address and we will keep you to date on the progress of the site. Your details will stay private and will not be sold to anyone.</div>
+	<input type="hidden" name="entry.1.single" value="{{ request.META.HTTP_REFERER }}" class="ss-q-short i-text" id="entry_0">
+	<input type="hidden" name="entry.2.single" value="{{ request.META }}" class="ss-q-short i-text" id="entry_0">	
+	<input type="hidden" name="pageNumber" value="0"> 
+	<input type="hidden" name="backupCache" value=""> 
+
+
+	<div class="ss-item ss-navigate"><div class="ss-form-entry"> 
+	<input type="submit" name="submit" value="Submit &raquo;" class="uberbutton button1"></div></div>
+	</form> 
+
+
+  </div> 
+<script type="text/javascript">
+var _sf_async_config={uid:21143,domain:"skipola.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>  
+</body>
+</html>
