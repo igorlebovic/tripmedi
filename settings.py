@@ -49,7 +49,7 @@ USE_L10N = True
 # Example: "/home/media/media.lawrence.com/"
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 # PROJECT_ROOT = '/Users/igorlebovic/tripmedi/'
-MEDIA_ROOT = PROJECT_ROOT + '/static/'
+MEDIA_ROOT = PROJECT_ROOT + '/static'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
