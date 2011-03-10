@@ -15,10 +15,10 @@
 		<h2>What kind of a procedure are you looking for?</h2>
 		
 		{% for category in category_list %}
-		<h3>{{ category.category_name }}</h3>
+		<h3>{{ category.medical_category_name }}</h3>
 		<ul>
             {% for procedure in category.medicalcategory_procedures.all %}
-			<li><a href="/procedure/{{ procedure.procedure_name }}">Nose surgery</a></li>
+			<li><a href="/procedure/{{ procedure.procedure_name|urlencode}}/">{{ procedure.procedure_name }}</a></li>
 
             {% endfor %}
 		</ul>
