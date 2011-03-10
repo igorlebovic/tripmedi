@@ -95,5 +95,9 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'tripmedi.app',
+<<<<<<< HEAD
     # 'socialauth',
+=======
+    #'socialauth',
+>>>>>>> f315515b9f61341d490c485006406650648258f0
 )

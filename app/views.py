@@ -10,6 +10,7 @@ def index(request):
     return render_to_response('search.html')
     # return HttpResponse('blah')
 
+<<<<<<< HEAD
 def procedure(request, procedure_name, template_name="listing.html"):
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
@@ -67,3 +68,21 @@ def confirmation(request, template_name='confirmation.html'):
         cart_url = urlresolvers.reverse('show_cart')
         return HttpResponseRedirect(cart_url)
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+=======
+def procedure(request, procedure_name, template_name="procedure.html"):
+    page_title = 'Procedure'
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+def listing(request, procedure_name, template_name="listing.html"):
+    page_title = 'Showing Listings For %s' % (procedure_name,)
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+def search(request, template_name="search.html"):
+    page_title = "TripMedi - Find a Procedure"
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+def about(request, template_name="about.html"):
+    page_title = "About TripMedi"
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+>>>>>>> f315515b9f61341d490c485006406650648258f0
