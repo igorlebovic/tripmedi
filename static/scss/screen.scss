@@ -68,10 +68,7 @@ a, a:link {
 
 .master-container {
 	@include container;
-	padding-left:  10px;
-	
-	background: url(../images/grid.gif) 0 0 repeat-y;
-	
+		
 	aside {
 		@include column(3);
 	}
@@ -162,7 +159,9 @@ h1 {
 }
 
 
-.results {
+table.results {
+
+	width: 100%;
 	
 	td {
 		padding-bottom: 20px;
@@ -172,17 +171,30 @@ h1 {
 		padding-right: 20px;		
 	}
 	
-	.p-travel {
-		width:  300px;
+	.p-rep, .p-cost, .p-travel {
 	}
 	
+	.p-buttons {
+		width:  150px;
+		text-align: right;
+	}	
+	
 	.p-name {
-		width:  220px;
+		font-weight: medium;
 		font-size: 15px;
 		
 		span {
 			color: $gray1;
 		}
+	}
+	
+	.p-exp {
+		display: block;
+		padding-top: 5px;
+		font-size: 12px;
+		font-weight: bold;
+		color: $gray1;
+		font-style: italic;
 	}
 	
 	.p-rep-img {
@@ -209,13 +221,6 @@ h1 {
 		background-position: 0 0;
 	}
 	
-	
-	.p-usa-exp td {
-		vertical-align: top;
-		font-size: 12px;
-		color: $gray1;
-		font-weight: bold;
-	}
 	
 	.p-usa td {
 		padding-bottom: 0;
@@ -265,21 +270,33 @@ h1 {
 		text-transform: uppercase;
 		padding-bottom: 5px;
 		line-height: 1;
-		padding-bottom: 0;
 	}
 	
-	a.button {
-		@include linear-gradient(color-stops(#F3F1EA, #333), top);
+	td.filter {
+		padding:  20px;
+		font: 13px;
+		color: #000;
+	}
+
+}
+
+	a.a-button {
+		@include linear-gradient(color-stops(#F3F1EA, #DEDBD6), top);
+		-pie-background: linear-gradient(#F3F1EA, #DEDBD6);
 		@include text-shadow(#fff, 0, -1px, 0);
 		display: inline-block;
 	  	
-	  	padding: 10px;
-	  	border: 1px solid #666;
-		-pie-background: linear-gradient($color1, $color2);
-		font-size: 14px;
-		letter-spacing: 1px;
+	  	padding: 8px 10px;
+	  	border: 1px solid #A09D9D;
+		
+		font-size: 11px;
 		text-transform: uppercase;
+		font-weight: bold;
 		color: #333;
 
 	}
-}
+	
+	sup {
+		font-size:  80%;
+		font-weight: bold;
+	}
