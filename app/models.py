@@ -86,7 +86,7 @@ class Procedure(models.Model):
 
 class MedicalCategory(models.Model):
     medical_category_name = models.CharField(max_length=100)
-    medicalcategory_procedures = models.ManyToManyField(Procedure,related_name="procedure_medicalcategories")
+    medicalcategory_procedures = models.ManyToManyField(Procedure,related_name="procedure_medicalcategories",blank=True, symmetrical=True)
 
     def __unicode__(self):
         return self.medical_category_name

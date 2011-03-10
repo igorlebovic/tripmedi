@@ -17,7 +17,7 @@
 		{% for category in category_list %}
 		<h3>{{ category.category_name }}</h3>
 		<ul>
-            {% for procedure in category.category_procedures %}
+            {% for procedure in category.medicalcategory_procedures.all %}
 			<li><a href="/procedure/{{ procedure.procedure_name }}">Nose surgery</a></li>
 
             {% endfor %}
