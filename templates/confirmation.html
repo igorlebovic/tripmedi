@@ -1,1 +1,17 @@
-confirmation
+{% extends "base.html" %}
+
+{% load filters %}
+
+{% block content %}
+
+<body>
+{{ procedure_name }} {{ provider_name }}
+  <div class="master-container">
+
+	{% header %}
+	{% footer %}
+    
+    <div class="clearfix"></div>
+  </div> 
+
+{% endblock %}
