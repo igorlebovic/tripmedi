@@ -1,1 +1,17 @@
-checkout
+{% extends "base.html" %}
+
+{% load filters %}
+
+{% block content %}
+
+<body>
+{{ procedure_name }} {{ provider_name }} <a href="/checkout/{{ procedure_name }}/{{ provider_name }}/">next (receipt)</a>
+  <div class="master-container">
+
+	{% header %}
+	{% footer %}
+    
+    <div class="clearfix"></div>
+  </div> 
+
+{% endblock %}

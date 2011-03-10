@@ -1,8 +1,14 @@
-{% include '_html_header.html' %}
+{% extends "base.html" %}
+
+{% load filters %}
+
+{% block content %}
+
 <body>
-{{ procedure_name }} </br></br>
+{{ procedure_name }} <a href="/selection/{{ procedure_name }}/jose-carrera/">Dr. Jose Carrera</a></br></br>
   <div class="master-container">
-    <header>
+
+	{% header %}
     
     	<div class="logo">tripMedi</div>
     	
@@ -79,10 +85,9 @@
 		
     </div>
     
-    <footer>
-
-    </footer>
+	{% footer %}
     
     <div class="clearfix"></div>
   </div> 
-{% include '_html_footer.html' %}
+
+{% endblock %}
