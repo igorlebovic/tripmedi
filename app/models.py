@@ -40,8 +40,8 @@ class Country(models.Model):
 
 
 class CountryRegion(models.Model):
-    country = models.ForeignKey(Country)
     region_name = models.CharField(max_length=75)
+    region_countries = models.ManyToManyField(Country,related_name="country_regions")
 
     def __unicode__(self):
         return self.region_name
