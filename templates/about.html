@@ -1,9 +1,26 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title></title>
-</head>
+{% extends "base.html" %}
+
+{% load filters %}
+
+{% block content %}
+
 <body>
 
-</body>
-</html>
+  <div class="master-container">
+
+	{% header %}
+
+    <div class="page-container" role="main">
+
+		<h2>About Us</h2>
+
+
+		<h3>The Team</h3>
+    </div>
+
+	{% footer %}
+
+    <div class="clearfix"></div>
+  </div>
+
+{% endblock %}
