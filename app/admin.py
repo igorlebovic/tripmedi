@@ -10,4 +10,5 @@ admin.site.register(ProviderProcedure)
 admin.site.register(ProviderSurgeon)
 admin.site.register(ProviderSurgeonLanguage)
 admin.site.register(UserProviderProcedureSearch)
+admin.site.register(MedicalCategory)
 

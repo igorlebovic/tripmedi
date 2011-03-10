@@ -10,7 +10,7 @@ import itertools
 
 def index(request, template_name='index.html'):
 
-    category_list = app.models.Category.objects.all()
+    category_list = app.models.MedicalCategory.objects.all()
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
     # return HttpResponse('blah')
 

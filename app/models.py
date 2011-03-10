@@ -84,7 +84,7 @@ class Procedure(models.Model):
         return self.procedure_name
 
 
-class Category(models.Model):
+class MedicalCategory(models.Model):
     category_name = models.CharField(max_length=100)
     category_procedures = models.ManyToManyField(Procedure,related_name="procedure_categories")
 
