@@ -6,4 +6,7 @@ urlpatterns = patterns('tripmedi.app.views',
       (r'^selection/(?P<procedure_name>[-\w]+)/(?P<provider_name>[-\w]+)/$', 'selection'),
       (r'^checkout/(?P<procedure_name>[-\w]+)/$', 'checkout'),      
       (r'^confirmation$', 'confirmation'),
+      (r'^about$', 'about'),
+      (r'^press$', 'press'),
+
 )

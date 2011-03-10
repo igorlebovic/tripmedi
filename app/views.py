@@ -21,3 +21,11 @@ def checkout(request, procedure_name, provider_name, template_name="checkout.htm
 
 def confirmation(request, procedure_name, provider_name, template_name="confirmation.html"):
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+# views for press releases and team bio
+def about(request, template_name='about.html'):
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
+
+
+def press(request, template_name='press.html'):
+    return render_to_response(template_name, locals(), context_instance=RequestContext(request))
