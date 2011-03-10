@@ -22,6 +22,9 @@ class EmailList(models.Model):
     http_request = models.CharField(max_length=500)
     signup_datetime = models.DateTimeField()
 
+    def __unicode__(self):
+        return str(self.signup_datetime) + " " + self.email_address
+
 
 class Country(models.Model):
     country_name = models.CharField(max_length=75)
@@ -32,16 +35,25 @@ class Country(models.Model):
     ISO_numeric_code = models.CharField(max_length=10)
     ISO_3166_2_code = models.CharField(max_length=20)
 
+    def __unicode__(self):
+        return self.country_name
+
 
 class CountryRegion(models.Model):
     country = models.ForeignKey(Country)
     region_name = models.CharField(max_length=75)
+
+    def __unicode__(self):
+        return self.region_name
 
 
 class CountryExchangeRate(models.Model):
     country = models.ForeignKey(Country)
     exchange_rate = models.DecimalField(max_digits=19,decimal_places=8)
     last_refreshed_timestamp = models.IntegerField()
+
+    def __unicode__(self):
+        return self.country + ": " + self.exchange_rate
 
 
 # The healthcare provider - individual surgeons would enter their practice here
@@ -54,6 +66,9 @@ class Provider(models.Model):
     city = models.CharField(max_length=50)
     provider_region_rank = models.IntegerField()
     provider_url = models.CharField(max_length=300)
+
+    def __unicode__(self):
+        return self.provider_name + " - " + self.country
 
 
 # The medical procedure
@@ -77,6 +92,9 @@ class ProviderProcedure(models.Model):
     price = models.DecimalField(max_digits=10,decimal_places=2)
     price_valid_until_timestamp = models.IntegerField()
 
+    def __unicode__(self):
+        return self.procedure + " with " + self.provider
+
 
 # Surgeons affiliated with a provider
 class ProviderSurgeon(models.Model):
@@ -89,11 +107,17 @@ class ProviderSurgeon(models.Model):
     surgeon_bibliography = models.CharField(max_length=500)
     surgeon_price = models.DecimalField(max_digits=10,decimal_places=2)
 
+    def __unicode__(self):
+        return "Dr. " + self.surgeon_first_name + " " + self.surgeon_last_name
+
 
 class ProviderSurgeonLanguage(models.Model):
     providersurgeon = models.ForeignKey(ProviderSurgeon)
     language = models.CharField(max_length=50)
     language_skill = models.CharField(max_length=50)
+
+    def __unicode__(self):
+        return self.language
 
 
 # Saved searches
@@ -106,3 +130,6 @@ class UserProviderProcedureSearch(models.Model):
     hotel_API = models.CharField(max_length=500)
     hotel_price = models.DecimalField(max_digits=10,decimal_places=2)
     searched_on_datetime = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return str(self.searched_on_datetime) + " - " + self.procedure + " with " + self.provider
