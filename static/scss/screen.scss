@@ -269,8 +269,10 @@ h1 {
 	}
 	
 	a.button {
+		@include linear-gradient(color-stops(#F3F1EA, #333), top);
+		@include text-shadow(#fff, 0, -1px, 0);
 		display: inline-block;
-	  	+linear-gradient(color_stops(#F3F1EA, #333), top);
+	  	
 	  	padding: 10px;
 	  	border: 1px solid #666;
 		-pie-background: linear-gradient($color1, $color2);
@@ -278,6 +280,6 @@ h1 {
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		color: #333;
-		+text-shadow(#fff, 0, -1px, 0)
+
 	}
 }

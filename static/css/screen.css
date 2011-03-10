@@ -1,66 +1,371 @@
-/*
-Syntax error: Invalid CSS after "...linear-gradient": expected "{", was "(color_stops(#F..."
-        on line 273 of /Users/cemre/projects/tripmedi/static/scss/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/cemre/projects/tripmedi/static/scss/screen.scss:273
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:821:in `expected'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:796:in `expected'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:792:in `tok!'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:321:in `block'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:316:in `ruleset'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:384:in `declaration_or_ruleset'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:340:in `block_child'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:333:in `block_contents'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:322:in `block'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:316:in `ruleset'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:384:in `declaration_or_ruleset'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:340:in `block_child'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:333:in `block_contents'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:322:in `block'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:316:in `ruleset'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:339:in `block_child'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:333:in `block_contents'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:57:in `stylesheet'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/scss/parser.rb:26:in `parse'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/engine.rb:205:in `_to_tree'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/engine.rb:196:in `_render'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/engine.rb:168:in `block in render'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/haml/util.rb:289:in `silence_haml_warnings'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/lib/sass/engine.rb:168:in `render'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `block in compile'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `block in run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:92:in `recompile'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:71:in `call'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:34:in `update'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:32:in `block in modified'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/haml-3.0.22/vendor/fssm/lib/fssm.rb:17:in `monitor'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:61:in `perform'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/bin/compass:26:in `<top (required)>'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/bin/compass:19:in `load'
-/Users/cemre/.rvm/gems/ruby-1.9.2-p0/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...linear-gradient\": expected \"{\", was \"(color_stops(#F...\"\A         on line 273 of /Users/cemre/projects/tripmedi/static/scss/screen.scss"; }
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+@charset "UTF-8";
+@font-face {
+  font-family: 'OfficinaSerifOSITCTTBold';
+  src: url("offsfob_-webfont.eot");
+  src: url("offsfob_-webfont.eot?iefix") format("eot"), url("offsfob_-webfont.woff") format("woff"), url("offsfob_-webfont.ttf") format("truetype"), url("offsfob_-webfont.svg#webfontv0ZuWj5C") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 38, ../scss/screen.scss */
+h1 {
+  font-family: 'OfficinaSerifOSITCTTBold';
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* line 44, ../scss/screen.scss */
+h2 {
+  font-weight: bold;
+}
+
+/* line 48, ../scss/screen.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 52, ../scss/screen.scss */
+body {
+  font: 13px/1.25 "Helvetica Neue", Arial;
+}
+
+/* line 56, ../scss/screen.scss */
+a, a:link {
+  color: #3b7ec1;
+  text-decoration: none;
+}
+
+/* line 61, ../scss/screen.scss */
+a:hover {
+  color: #3b7ec1;
+  text-decoration: underline;
+}
+
+/* line 69, ../scss/screen.scss */
+.master-container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 10px;
+  background: url(../images/grid.gif) 0 0 repeat-y;
+}
+/* line 75, ../scss/screen.scss */
+.master-container aside {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .master-container aside {
+  overflow-x: hidden;
+}
+/* line 79, ../scss/screen.scss */
+.master-container .content-area {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 700px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .master-container .content-area {
+  overflow-x: hidden;
+}
+
+/* line 85, ../scss/screen.scss */
+header {
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 91, ../scss/screen.scss */
+header .logo {
+  float: left;
+  padding: 0 10px;
+}
+
+/* line 96, ../scss/screen.scss */
+nav li {
+  float: left;
+  border-left: 1px solid #ddd;
+}
+
+/* line 102, ../scss/screen.scss */
+nav li a {
+  font-weight: bold;
+  display: block;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #b4b1b1;
+}
+/* line 111, ../scss/screen.scss */
+nav li a span {
+  font-size: 12px;
+}
+
+/* line 116, ../scss/screen.scss */
+.nav-aux {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+/* line 122, ../scss/screen.scss */
+.nav-aux li {
+  border: 0;
+}
+/* line 126, ../scss/screen.scss */
+.nav-aux a {
+  display: inline;
+  padding: 0;
+}
+
+/* line 133, ../scss/screen.scss */
+.aside-content {
+  background: #f6f4ed url(../images/noise50.png) repeat;
+  padding: 10px;
+}
+/* line 137, ../scss/screen.scss */
+.aside-content .aside-part {
+  margin: 0 0 20px;
+}
+/* line 140, ../scss/screen.scss */
+.aside-content .aside-part p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: medium;
+}
+/* line 146, ../scss/screen.scss */
+.aside-content .aside-part h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 160, ../scss/screen.scss */
+aside
+h1 {
+  font-weight: bold;
+}
+
+/* line 167, ../scss/screen.scss */
+.results td {
+  padding-bottom: 20px;
+}
+/* line 171, ../scss/screen.scss */
+.results .p-name, .results .p-rep, .results .p-cost, .results .p-travel {
+  padding-right: 20px;
+}
+/* line 175, ../scss/screen.scss */
+.results .p-travel {
+  width: 300px;
+}
+/* line 179, ../scss/screen.scss */
+.results .p-name {
+  width: 220px;
+  font-size: 15px;
+}
+/* line 183, ../scss/screen.scss */
+.results .p-name span {
+  color: #b4b1b1;
+}
+/* line 188, ../scss/screen.scss */
+.results .p-rep-img {
+  background-image: url(../images/ratings.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 57px;
+  height: 12px;
+}
+/* line 196, ../scss/screen.scss */
+.results .p-rep-1 .p-rep-img {
+  background-position: 0 -36px;
+}
+/* line 200, ../scss/screen.scss */
+.results .p-rep-2 .p-rep-img {
+  background-position: 0 -24px;
+}
+/* line 204, ../scss/screen.scss */
+.results .p-rep-3 .p-rep-img {
+  background-position: 0 -12px;
+}
+/* line 208, ../scss/screen.scss */
+.results .p-rep-4 .p-rep-img {
+  background-position: 0 0;
+}
+/* line 213, ../scss/screen.scss */
+.results .p-usa-exp td {
+  vertical-align: top;
+  font-size: 12px;
+  color: #b4b1b1;
+  font-weight: bold;
+}
+/* line 220, ../scss/screen.scss */
+.results .p-usa td {
+  padding-bottom: 0;
+}
+/* line 224, ../scss/screen.scss */
+.results .p-cost div {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+/* line 229, ../scss/screen.scss */
+.results .p-cost-1 div {
+  color: #99CC00;
+}
+/* line 230, ../scss/screen.scss */
+.results .p-cost-2 div {
+  color: #D3CC00;
+}
+/* line 231, ../scss/screen.scss */
+.results .p-cost-3 div {
+  color: #F4CC00;
+}
+/* line 232, ../scss/screen.scss */
+.results .p-cost-4 div {
+  color: #F4A000;
+}
+/* line 233, ../scss/screen.scss */
+.results .p-cost-5 div {
+  color: #E35A00;
+}
+/* line 234, ../scss/screen.scss */
+.results .p-cost-6 div {
+  color: #CE0700;
+}
+/* line 236, ../scss/screen.scss */
+.results .p-travel-1 img {
+  background-color: #EFEFEF;
+}
+/* line 237, ../scss/screen.scss */
+.results .p-travel-2 img {
+  background-color: #C3C3C3;
+}
+/* line 238, ../scss/screen.scss */
+.results .p-travel-3 img {
+  background-color: #909090;
+}
+/* line 239, ../scss/screen.scss */
+.results .p-travel-4 img {
+  background-color: #616161;
+}
+/* line 240, ../scss/screen.scss */
+.results .p-travel-5 img {
+  background-color: #323232;
+}
+/* line 241, ../scss/screen.scss */
+.results .p-travel-6 img {
+  background-color: #010101;
+}
+/* line 243, ../scss/screen.scss */
+.results .p-travel span {
+  display: block;
+  float: left;
+  padding: 7px 0 0 5px;
+  text-align: left;
+}
+/* line 250, ../scss/screen.scss */
+.results .p-travel-img {
+  color: #000;
+  height: 30px;
+  font-weight: bold;
+}
+/* line 256, ../scss/screen.scss */
+.results .p-travel img {
+  float: left;
+}
+/* line 260, ../scss/screen.scss */
+.results thead td {
+  vertical-align: bottom;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #b4b1b1;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  line-height: 1;
+  padding-bottom: 0;
+}
+/* line 271, ../scss/screen.scss */
+.results a.button {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f3f1ea), color-stop(100%, #333333));
+  background-image: -moz-linear-gradient(top, #f3f1ea 0%, #333333 100%);
+  background-image: linear-gradient(top, #f3f1ea 0%, #333333 100%);
+  text-shadow: white 0 -1px 0;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #666;
+  -pie-background: linear-gradient(#8ec6e1, #3b7ec1);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+}
