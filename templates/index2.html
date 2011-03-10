@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load filters %}
+
+{% block content %}
+
+<body>
+
+  <div class="master-container">
+
+	{% header %}
+	
+    <div class="page-container" role="main">
+			
+		<h2>What kind of a procedure are you looking for?</h2>
+		
+		{% for category in category_list %}
+		<h3>{{ category.medical_category_name }}</h3>
+		<ul>
+            {% for procedure in category.medicalcategory_procedures.all %}
+			<li><a href="/procedure/{{ procedure.id }}/">{{ procedure.procedure_name }}</a></li>
+
+            {% endfor %}
+		</ul>
+        {% endfor %}
+    </div>
+    
+	{% footer %}
+		    
+    <div class="clearfix"></div>
+  </div>
+
+{% endblock %}
