@@ -77,23 +77,13 @@ class Procedure(models.Model):
     procedure_description = models.CharField(max_length=500)
     procedure_risks = models.CharField(max_length=500)
     procedure_postop_care = models.CharField(max_length=500)
-    procedure_recovery_time_days = models.IntegerField()
-    
+    procedure_recovery_time_days = models.IntegerField(
+    united_states_comparative_price = models.DecimalField(max_digits=10,decimal_places=2))
 
     def __unicode__(self):
         return self.procedure_name
 
 
-class MedicalCategory(models.Model):
-    category_name = models.CharField(max_length=100)
-    category_procedures = models.ManyToManyField(Procedure,related_name="procedure_categories")
-
-    def __unicode__(self):
-        return self.category_name
-
-
-
-# What procedures a provider offers
 class ProviderProcedure(models.Model):
     provider = models.ForeignKey(Provider)
     procedure = models.ForeignKey(Procedure)
@@ -103,12 +93,19 @@ class ProviderProcedure(models.Model):
     price_valid_until_timestamp = models.IntegerField()
 
     def __unicode__(self):
-        return self.procedure + " with " + self.provider
+        return self.procedure + " at " + self.provider
+
+
+class MedicalCategory(models.Model):
+    medical_category_name = models.CharField(max_length=100)
+    medicalcategory_procedures = models.ManyToManyField(Procedure,related_name="procedure_medicalcategories")
+
+    def __unicode__(self):
+        return self.medical_category_name
 
 
 # Surgeons affiliated with a provider
-class ProviderSurgeon(models.Model):
-    provider = models.ForeignKey(Provider)
+class Surgeon(models.Model):
     surgeon_first_name = models.CharField(max_length=50)
     surgeon_last_name = models.CharField(max_length=75)
     surgeon_bio = models.CharField(max_length=500)
@@ -116,13 +113,14 @@ class ProviderSurgeon(models.Model):
     surgeon_degrees = models.CharField(max_length=500)
     surgeon_bibliography = models.CharField(max_length=500)
     surgeon_price = models.DecimalField(max_digits=10,decimal_places=2)
+    surgeon_providers = models.ManyToManyField(Procedure,related_name="surgeon_providers")
 
     def __unicode__(self):
         return "Dr. " + self.surgeon_first_name + " " + self.surgeon_last_name
 
 
-class ProviderSurgeonLanguage(models.Model):
-    providersurgeon = models.ForeignKey(ProviderSurgeon)
+class SurgeonLanguage(models.Model):
+    surgeon = models.ForeignKey(Surgeon)
     language = models.CharField(max_length=50)
     language_skill = models.CharField(max_length=50)
 
