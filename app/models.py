@@ -78,9 +78,19 @@ class Procedure(models.Model):
     procedure_risks = models.CharField(max_length=500)
     procedure_postop_care = models.CharField(max_length=500)
     procedure_recovery_time_days = models.IntegerField()
+    
 
     def __unicode__(self):
         return self.procedure_name
+
+
+class Category(models.Model):
+    category_name = models.CharField(max_length=100)
+    category_procedures = models.ManyToManyField(Procedure,related_name="procedure_categories")
+
+    def __unicode__(self):
+        return self.category_name
+
 
 
 # What procedures a provider offers

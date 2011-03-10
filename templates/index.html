@@ -14,33 +14,15 @@
 			
 		<h2>What kind of a procedure are you looking for?</h2>
 		
-		
-		<h3>Cosmetic operations</h3>
+		{% for category in category_list %}
+		<h3>{{ category.category_name }}</h3>
 		<ul>
-			<li><a href="/procedure/nose-surgery/">Nose surgery</a></li>
-			<li><a href="/procedure/facelift/">Facelift</a></li>
-			<li><a href="/procedure/hair-transplant/">Hair transplant</a></li>			
-			<li><a href="/procedure/lip-surgery/">Lip surgery</a></li>	
-			<li><a href="/procedure/breast-augmentation-implant-reduction/">Breast augmentation/implant/reduction</a></li>									
-			<li><a href="/procedure/tummy-tuck/">Tummy tuck</a></li>				
-			<li><a href="/procedure/liposuction/">Liposuction</a></li>				
-		</ul>		
+            {% for procedure in category.category_procedures %}
+			<li><a href="/procedure/{{ procedure.procedure_name }}">Nose surgery</a></li>
 
-
-		<h3>Life Quality</h3>
-		<ul>
-			<li><a href="/procedure/hip-surgery-replacement/">Hip surgery/replacement</a></li>		
-			<li><a href="/procedure/knee-elbow-ankle-surgery/">Knee, elbow, ankle surgery</a></li>
-		</ul>		
-
-		<h3>Advanced</h3>
-		<ul>
-			<li><a href="/procedure/open-heart-surgery/">Open heart surgery</a></li>		
-			<li><a href="/procedure/reproductive-treatment/">Reproductive treatment</a></li>
-			<li><a href="/procedure/lap-band/">Lap band</a></li>			
-			<li><a href="/procedure/gastric-bypass/">Gastric bypass</a></li>
-		</ul>			
-							
+            {% endfor %}
+		</ul>
+        {% endfor %}
     </div>
     
 	{% footer %}
