@@ -22,6 +22,9 @@ class EmailList(models.Model):
     http_request = models.CharField(max_length=500)
     signup_datetime = models.DateTimeField()
 
+    def __unicode__(self):
+        return str(self.signup_datetime) + " " + self.email_address
+
 
 class Country(models.Model):
     country_name = models.CharField(max_length=75)
@@ -32,16 +35,25 @@ class Country(models.Model):
     ISO_numeric_code = models.CharField(max_length=10)
     ISO_3166_2_code = models.CharField(max_length=20)
 
+    def __unicode__(self):
+        return self.country_name
+
 
 class CountryRegion(models.Model):
-    country = models.ForeignKey(Country)
     region_name = models.CharField(max_length=75)
+    region_countries = models.ManyToManyField(Country,related_name="country_regions")
+
+    def __unicode__(self):
+        return self.region_name
 
 
 class CountryExchangeRate(models.Model):
     country = models.ForeignKey(Country)
     exchange_rate = models.DecimalField(max_digits=19,decimal_places=8)
     last_refreshed_timestamp = models.IntegerField()
+
+    def __unicode__(self):
+        return self.country + ": " + self.exchange_rate
 
 
 # The healthcare provider - individual surgeons would enter their practice here
@@ -55,6 +67,9 @@ class Provider(models.Model):
     provider_region_rank = models.IntegerField()
     provider_url = models.CharField(max_length=300)
 
+    def __unicode__(self):
+        return self.provider_name + " - " + self.country
+
 
 # The medical procedure
 class Procedure(models.Model):
@@ -63,9 +78,19 @@ class Procedure(models.Model):
     procedure_risks = models.CharField(max_length=500)
     procedure_postop_care = models.CharField(max_length=500)
     procedure_recovery_time_days = models.IntegerField()
+    united_states_comparative_price = models.DecimalField(max_digits=10,decimal_places=2)
 
     def __unicode__(self):
         return self.procedure_name
+
+
+class MedicalCategory(models.Model):
+    medical_category_name = models.CharField(max_length=100)
+    medicalcategory_procedures = models.ManyToManyField(Procedure,related_name="procedure_medicalcategories",blank=True, symmetrical=True)
+
+    def __unicode__(self):
+        return self.medical_category_name
+
 
 
 # What procedures a provider offers
@@ -77,10 +102,20 @@ class ProviderProcedure(models.Model):
     price = models.DecimalField(max_digits=10,decimal_places=2)
     price_valid_until_timestamp = models.IntegerField()
 
+    def __unicode__(self):
+        return self.procedure + " at " + self.provider
+
+
+class MedicalCategory(models.Model):
+    medical_category_name = models.CharField(max_length=100)
+    medicalcategory_procedures = models.ManyToManyField(Procedure,related_name="procedure_medicalcategories")
+
+    def __unicode__(self):
+        return self.medical_category_name
+
 
 # Surgeons affiliated with a provider
-class ProviderSurgeon(models.Model):
-    provider = models.ForeignKey(Provider)
+class Surgeon(models.Model):
     surgeon_first_name = models.CharField(max_length=50)
     surgeon_last_name = models.CharField(max_length=75)
     surgeon_bio = models.CharField(max_length=500)
@@ -88,12 +123,19 @@ class ProviderSurgeon(models.Model):
     surgeon_degrees = models.CharField(max_length=500)
     surgeon_bibliography = models.CharField(max_length=500)
     surgeon_price = models.DecimalField(max_digits=10,decimal_places=2)
+    surgeon_providers = models.ManyToManyField(Procedure,related_name="surgeon_providers")
+
+    def __unicode__(self):
+        return "Dr. " + self.surgeon_first_name + " " + self.surgeon_last_name
 
 
-class ProviderSurgeonLanguage(models.Model):
-    providersurgeon = models.ForeignKey(ProviderSurgeon)
+class SurgeonLanguage(models.Model):
+    surgeon = models.ForeignKey(Surgeon)
     language = models.CharField(max_length=50)
     language_skill = models.CharField(max_length=50)
+
+    def __unicode__(self):
+        return self.language
 
 
 # Saved searches
@@ -102,5 +144,10 @@ class UserProviderProcedureSearch(models.Model):
     provider = models.ForeignKey(Provider)
     procedure = models.ForeignKey(Procedure)
     airfare_API = models.CharField(max_length=500)
+    airfare_price = models.DecimalField(max_digits=10,decimal_places=2)
     hotel_API = models.CharField(max_length=500)
+    hotel_price = models.DecimalField(max_digits=10,decimal_places=2)
     searched_on_datetime = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return str(self.searched_on_datetime) + " - " + self.procedure + " with " + self.provider
