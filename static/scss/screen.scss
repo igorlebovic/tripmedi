@@ -7,11 +7,10 @@ $color1: #8EC6E1;
 $color2: #3B7EC1;
 $color3: #0A4874;
 
-$font1: 1em;
-$font2: 1.3077em;
-$font3: 1.6154em;
-$font4: 2.1154em;
-$font5: 2.6154em;
+$box-bg: #F6F4ED;
+
+$gray1: #B4B1B1;
+
 
 @import "compass/reset";
 @import "compass";
@@ -23,18 +22,30 @@ $blueprint-grid-width: 60px;
 $blueprint-grid-margin: 20px;
 $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
+@font-face {
+    font-family: 'OfficinaSerifOSITCTTBold';
+    src: url('offsfob_-webfont.eot');
+    src: url('offsfob_-webfont.eot?iefix') format('eot'),
+         url('offsfob_-webfont.woff') format('woff'),
+         url('offsfob_-webfont.ttf') format('truetype'),
+         url('offsfob_-webfont.svg#webfontv0ZuWj5C') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 h1 {
-	font-size: $font4;
-	font-weight: bold;
+	font-family: 'OfficinaSerifOSITCTTBold';
+	font-size: 32px;
+	margin-bottom: 10px;
 }
 
 h2 {
-	font-size: $font3;
 	font-weight: bold;	
 }
 
 h3 {
-	font-size:  $font2;
 	font-weight: bold;	
 }
 
@@ -63,9 +74,6 @@ a, a:link {
 	
 	aside {
 		@include column(3);
-		width:  240px;
-		margin-left:  -10px;
-		margin-right: 10px;		
 	}
 	
 	.content-area {
@@ -77,25 +85,32 @@ a, a:link {
 header {
 	position: relative;
 	margin-bottom: 30px;
+	border-bottom: 1px solid #ddd;
 }
 
 	header .logo {
 		float:  left;
-		font-size:  $font4;
-		letter-spacing: -1px;
-		font-weight: bold;
-		
+		padding: 0 10px;
 	}
 	
 	nav li {
 		float:  left;
-		padding:  10px 0 0;
-		margin: 0 10px;
+		border-left: 1px solid #ddd;
 	}
 	
 	
 	nav li a {
 		font-weight: bold;
+		display: block;
+		padding: 0 15px;
+		height: 50px;
+		line-height: 50px;
+		font-size:  14px;
+		color: $gray1;
+		
+		span {
+			font-size: 12px;
+		}
 	}
 	
 	.nav-aux {
@@ -103,22 +118,42 @@ header {
 		top: 0;
 		right:  0;
 		width:  auto;
+		
+		li {
+			border:  0;
+		}
+		
+		a {
+			display: inline;
+			padding: 0;
+		}
 	}
 	
 
-aside > div {
+.aside-content {
+	background: $box-bg url(../images/noise50.png) repeat;
 	padding: 10px;
-	background-color: #fafafa;
-	margin: 0 0 10px;
-	color: #fff;
 	
-	h3 {
-		margin: -10px -10px 0;
-		padding: 5px;
-		background-color: $color1;
-		line-height: 1;
+	.aside-part {
+		margin: 0 0 20px;
+		
+		p {
+			font-size: 13px;
+			margin-bottom: 10px;
+			font-weight: medium;
+		}
+		
+		h3 {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
 	}
 }
+
+
+
+aside 
 	
 
 
@@ -126,3 +161,93 @@ h1 {
 	font-weight: bold;
 }
 
+
+.results {
+	
+	td {
+		padding-bottom: 20px;
+	}
+	
+	.p-name, .p-rep, .p-cost, .p-travel {
+		padding-right: 20px;		
+	}
+	
+	.p-name {
+		width:  220px;
+		font-size: 15px;
+		
+		span {
+			color: $gray1;
+		}
+	}
+	
+	.p-rep-img {
+		background-image: url(../images/ratings.png);
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 57px;
+		height: 12px
+	}
+	
+	.p-rep-1 .p-rep-img {
+		background-position: 0 -36px;
+	}
+	
+	.p-rep-2 .p-rep-img {
+		background-position: 0 -24px;
+	}
+	
+	.p-rep-3 .p-rep-img {
+		background-position: 0 -12px;
+	}
+	
+	.p-rep-4 .p-rep-img {
+		background-position: 0 0;
+	}
+	
+	.p-cost {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	
+	.p-exp {
+		font-size: 12px;
+		color: $gray1;
+	}
+	
+	.p-cost-1 { color: #99CC00; }
+	.p-cost-2 { color: #D3CC00; }
+	.p-cost-3 { color: #F4CC00; }
+	.p-cost-4 { color: #F4A000; }
+	.p-cost-5 { color: #E35A00; }
+	.p-cost-6 { color: #CE0700; }
+	
+	.p-travel-1 img { background-color: #EFEFEF;}
+	.p-travel-2 img { background-color: #C3C3C3;}
+	.p-travel-3 img { background-color: #909090;}
+	.p-travel-4 img { background-color: #616161;}
+	.p-travel-5 img { background-color: #323232;}	
+	.p-travel-6 img { background-color: #010101;}		
+	
+	.p-travel span {
+		display: inline-block;
+		padding: 0 0 10px 5px;
+	}
+	
+	.p-travel-img {
+		color: #000;
+		height: 30px;
+		font-weight: bold;
+	}
+	
+	thead td {
+		vertical-align: bottom;
+		font-size: 12px !important;
+		font-weight: bold;
+		color: $gray1;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+		line-height: 1;
+		padding-bottom: 0;
+	}
+}

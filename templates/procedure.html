@@ -9,57 +9,115 @@
   <div class="master-container">
 
 	{% header %}
-    
-    	<div class="logo">tripMedi</div>
-    	
-		<nav class="nav-main">
-			<ul>
-				<li><a href="#">Find healthcare</a></li>
-			</ul>
-		</nav>
-		
-		<nav class="nav-aux">
-			<ul>
-				<li>
-					<a href="#">$ (USD)</a>
-				</li>
-				<li>
-					<a href="#">Log in</a>
-					·
-					<a href="#">Sign up</a>
-				</li>
-			</ul>		
-		</nav>
-		
-		<div class="clearfix"></div>
-    </header>
-    
+        
     <div class="page-container" role="main">
 				
 		<aside>
 		
-			<div class="expert-box">
-				<h3>Expert Opinion</h3>
-			</div>			
-			
-			<div class="filter">
-				<h3>Location</h3>
+			<div class="aside-content">
+		
+				<div class="aside-part">
+					<h3>Popular Destinations</h3>
+					<p>Thailand, Malaysia, Greece</p>
+					
+					<img src="/static/images/map.png">
+				</div>
+	
+				<div class="aside-part">
+					<h3>Reputation</h3>
+					<p>All providers we list are of equal or better quality to US institutions. <a href="">More info »</a></p>
+				</div>
+				
+				<div class="aside-part">
+					<h3>Estimated Cost</h3>
+					<p>40%-60% savings</p>
+					
+					<img src="/static/images/cost-bar.png">
+				</div>
+	
+				<div class="aside-part">
+					<h3>Ease of Transit</h3>
+					<p>Average flight times</p>
+					
+					<img src="/static/images/travel-bar.png">
+				</div>
 			</div>
-
-			<div class="filter">
-				<h3>Price</h3>
-			</div>
-			
-			<div class="filter">
-				<h3>Facility</h3>
-			</div>			
-			
+										
 		</aside>
 		
 		<div class="content-area">
 		
 			<div class="content-header">
 				<h1>Breast Implant Operations</h1>
+				
+				<table class="results">
+					<thead>
+						<tr>
+							<td class="p-name">
+							</td>
+							<td class="p-rep">
+								Reputation
+							</td>
+							<td class="p-cost">
+								Average<br>Cost
+							</td>
+							<td class="p-travel">
+								Travel<br>time
+							</td>
+							<td class="p-buttons">
+							</td>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="p-usa">
+							<td class="p-name">
+								Average treatment in<br/>
+								<span class="p-loc">United States</span>
+							</td>
+							<td class="p-rep-1">
+								<div class="p-rep-img"></div>
+								<div class="p-exp">average</div>
+							</td>
+							<td class="p-cost p-cost-1">
+								$3421
+								<div class="p-exp">average</div>								
+							</td>
+							<td class="p-travel p-travel-1">
+								<div class="p-travel-img">
+									<img src="/static/images/plane.png">
+									<span>none</span>
+								</div>
+							</td>
+							<td class="p-buttons">
+							</td>
+						</tr>
+						<tr>
+							<td class="filter" colspan="5">
+							
+							</td>
+						</tr>
+						<tr class="p-usa">
+							<td class="p-name">
+							</td>
+							<td class="p-rep-2">
+								<div class="p-rep-img"></div>
+							</td>
+							<td class="p-cost p-cost-4">
+								$342							
+							</td>
+							<td class="p-travel p-travel-4">
+								<div class="p-travel-img">
+									<img src="/static/images/plane.png">
+									<span>none<span>
+								</div>
+							</td>
+							<td class="p-buttons">
+							</td>
+						</tr>
+												
+					</tbody>
+				</table>
 				
 				<div class="sorter">
 					Sorted by:
