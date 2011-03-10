@@ -77,8 +77,8 @@ class Procedure(models.Model):
     procedure_description = models.CharField(max_length=500)
     procedure_risks = models.CharField(max_length=500)
     procedure_postop_care = models.CharField(max_length=500)
-    procedure_recovery_time_days = models.IntegerField(
-    united_states_comparative_price = models.DecimalField(max_digits=10,decimal_places=2))
+    procedure_recovery_time_days = models.IntegerField()
+    united_states_comparative_price = models.DecimalField(max_digits=10,decimal_places=2)
 
     def __unicode__(self):
         return self.procedure_name
