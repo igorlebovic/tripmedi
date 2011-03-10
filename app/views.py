@@ -8,7 +8,7 @@ from django.core import urlresolvers
 import app.models
 import itertools
 
-def index2(request, template_name='index.html'):
+def index2(request, template_name='index2.html'):
 
     category_list = app.models.MedicalCategory.objects.all()
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
