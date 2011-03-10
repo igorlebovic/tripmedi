@@ -23,7 +23,7 @@ $blueprint-grid-margin: 20px;
 $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
 @font-face {
-    font-family: 'OfficinaSerifOSITCTTBold';
+    font-family: 'off';
     src: url('offsfob_-webfont.eot');
     src: url('offsfob_-webfont.eot?iefix') format('eot'),
          url('offsfob_-webfont.woff') format('woff'),
@@ -34,10 +34,22 @@ $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
 }
 
+p {
+	margin-bottom: 1em;
+	color: #333;
+}
+
+p + p {
+	margin-bottom: 0;
+}
+
+p + ul {
+	margin-top: -1em;
+}
 
 h1 {
-	font-family: 'OfficinaSerifOSITCTTBold';
-	font-size: 32px;
+	font-family: 'off';
+	font-size: 28px;
 	margin-bottom: 10px;
 }
 
@@ -51,6 +63,7 @@ h3 {
 
 body {
 	font: 13px/1.25 'Helvetica Neue', Arial;
+	color: #222;	
 }
 
 a, a:link {
@@ -63,8 +76,11 @@ a, a:link {
 		text-decoration: underline;
 	}
 
-
-
+ul {
+	margin:  0;
+	padding: 0 0 0 20px;
+	list-style: disc;
+}
 
 .master-container {
 	@include container;
@@ -150,13 +166,6 @@ header {
 
 
 
-aside 
-	
-
-
-h1 {
-	font-weight: bold;
-}
 
 
 table.results {
@@ -300,3 +309,110 @@ table.results {
 		font-size:  80%;
 		font-weight: bold;
 	}
+	
+.splash {
+	background: url(../images/splash1.jpg);
+	width:  940px;
+	height: 280px;
+	position: relative;
+	
+	.splash-box {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		padding: 15px;
+		background: #000;
+		background: rgba(0,0,0,0.8);
+		
+		h1 {
+			font-family: 'off';
+			font-size: 28px;
+			color: #fff;
+			line-height: 1.2;
+			margin: 0;
+		}
+		
+		h2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #999;
+			color: rgba(255,255,255,0.5);
+			letter-spacing: 1px;
+		}
+		
+		select {
+			font-size: 16px;
+			padding: 2px;
+			border: 1px solid $gray1;
+			width: 80%;
+		}
+		
+		.a-button {
+			padding-top: 5px;
+			padding-bottom: 5px;			
+		}
+	}
+}
+
+.select {
+	width:  100%;
+	border:  1px solid #666;
+	font-size:  20px;
+	
+	.select-visible {
+		padding: 5px;
+	}
+	
+	.select-body {
+		
+	}
+}
+
+
+#homepage {
+
+	p {
+		color: #333;
+		line-height: 1.5;
+	}
+
+	font-size: 16px;
+	
+	.tagline {
+		width: 460px;
+		margin: 50px 0 50px;
+		background: url(../images/icon2.png) 20px 50% no-repeat;
+		padding-left: 140px;
+		
+		p {
+
+			font-weight: bold;
+			
+			span {
+				padding: 1px 3px;
+				background: #fc0;
+			}
+		}
+	}
+	
+	aside {
+		@include column(4, true);
+		margin-top: 30px;
+		
+		.aside-content {
+			padding: 20px;			
+		}
+		
+
+	}
+	
+	.content-area {
+		@include column(8);
+	}
+	
+	faq {
+		@include column(6);
+		@include push(1);
+	}
+}
