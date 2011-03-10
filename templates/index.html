@@ -1,76 +1,51 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+{% extends "base.html" %}
 
-  <title>tripMedi</title>
-  <link rel="stylesheet" href="/static/splash/splash-style.css" />
-  <script src="//cdn.optimizely.com/js/5837028.js"></script>
+{% load filters %}
 
-	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-	<style>
-		h1 {
-			line-height: 1.1;
-		}
-
-		.nospam {
-		  color: #666;
-		  font-size: 11px;
-		  line-height: 14px;	
-		}
-	</style>
-</head>
-
+{% block content %}
 
 <body>
-	<div class="background">
-	<img src="/static/splash/bg1.jpg">
-	</div>
 
-  <div class="container">
-	<h1><span style="font-size: 40px;">Medical tourism <br>you can trust.</span></h1>
-	<p>We take all of the information available online relating to medical tourism - provider experience, quality of facility, prices, distance - and  put it in a simple format that anyone can understand.</p>
-	<form action="https://spreadsheets.google.com/formResponse?formkey=dHUwQURQQk83b0lpOExUSHNkN2FvbWc6MQ&amp;ifq" method="POST" id="ss-form"> 
+  <div class="master-container">
 
-	<br> 
-
-	<label class="ss-q-title" for="entry_0">Enter your email address</label>
-	<input type="text" name="entry.0.single" value="" class="ss-q-short i-text" id="entry_0"><br />
-	<div class="nospam">We will keep you to date on the progress of the site. Your details will stay private and will not be sold to anyone.</div>
-	<input type="hidden" name="entry.1.single" value="{{ request.META.HTTP_REFERER }}" class="ss-q-short i-text" id="entry_0">
-	<input type="hidden" name="entry.2.single" value="{{ request.META }}" class="ss-q-short i-text" id="entry_0">	
-	<input type="hidden" name="pageNumber" value="0"> 
-	<input type="hidden" name="backupCache" value=""> 
-
-
-	<div class="ss-item ss-navigate"><div class="ss-form-entry"> 
-	<input type="submit" name="submit" value="Submit &raquo;" class="uberbutton button1"></div></div>
-	</form> 
+	{% header %}
+	
+    <div class="page-container" role="main">
+			
+		<h2>What kind of a procedure are you looking for?</h2>
+		
+		
+		<h3>Cosmetic operations</h3>
+		<ul>
+			<li><a href="/procedure/nose-surgery/">Nose surgery</a></li>
+			<li><a href="/procedure/facelift/">Facelift</a></li>
+			<li><a href="/procedure/hair-transplant/">Hair transplant</a></li>			
+			<li><a href="/procedure/lip-surgery/">Lip surgery</a></li>	
+			<li><a href="/procedure/breast-augmentation-implant-reduction/">Breast augmentation/implant/reduction</a></li>									
+			<li><a href="/procedure/tummy-tuck/">Tummy tuck</a></li>				
+			<li><a href="/procedure/liposuction/">Liposuction</a></li>				
+		</ul>		
 
 
-  </div> 
-<script type="text/javascript">
-var _sf_async_config={uid:21143,domain:"tripmedi.com"};
-(function(){
-  function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime();
-    var e = document.createElement('script');
-    e.setAttribute('language', 'javascript');
-    e.setAttribute('type', 'text/javascript');
-    e.setAttribute('src',
-       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-       "js/chartbeat.js");
-    document.body.appendChild(e);
-  }
-  var oldonload = window.onload;
-  window.onload = (typeof window.onload != 'function') ?
-     loadChartbeat : function() { oldonload(); loadChartbeat(); };
-})();
+		<h3>Life Quality</h3>
+		<ul>
+			<li><a href="/procedure/hip-surgery-replacement/">Hip surgery/replacement</a></li>		
+			<li><a href="/procedure/knee-elbow-ankle-surgery/">Knee, elbow, ankle surgery</a></li>
+		</ul>		
 
-</script>  
-</body>
-</html>
+		<h3>Advanced</h3>
+		<ul>
+			<li><a href="/procedure/open-heart-surgery/">Open heart surgery</a></li>		
+			<li><a href="/procedure/reproductive-treatment/">Reproductive treatment</a></li>
+			<li><a href="/procedure/lap-band/">Lap band</a></li>			
+			<li><a href="/procedure/gastric-bypass/">Gastric bypass</a></li>
+		</ul>			
+							
+    </div>
+    
+	{% footer %}
+		    
+    <div class="clearfix"></div>
+  </div>
+
+{% endblock %}

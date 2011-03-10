@@ -2,9 +2,10 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns('tripmedi.app.views',
       (r'^$', 'index'),
-      (r'^listing/(?P<procedure_name>[-\w]+)/$', 'listing'),
       (r'^procedure/(?P<procedure_name>[-\w]+)/$', 'procedure'),
-      (r'^search$', 'search'),
+      (r'^selection/(?P<procedure_name>[-\w]+)/(?P<provider_name>[-\w]+)/$', 'selection'),
+      (r'^checkout/(?P<procedure_name>[-\w]+)/(?P<provider_name>[-\w]+)/$', 'checkout'),      
+      (r'^confirmation/(?P<procedure_name>[-\w]+)/(?P<provider_name>[-\w]+)/$', 'confirmation'),
       (r'^about$', 'about'),
-
+      (r'^press$', 'press'),
 )

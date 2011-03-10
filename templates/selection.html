@@ -5,22 +5,13 @@
 {% block content %}
 
 <body>
-
+{{ procedure_name }} {{ provider_name }} <a href="/checkout/{{ procedure_name }}/{{ provider_name }}/">next (checkout)</a>
   <div class="master-container">
 
 	{% header %}
-
-    <div class="page-container" role="main">
-
-		<h2>About Us</h2>
-
-
-		<h3>The Team</h3>
-    </div>
-
 	{% footer %}
-
+    
     <div class="clearfix"></div>
-  </div>
+  </div> 
 
 {% endblock %}
