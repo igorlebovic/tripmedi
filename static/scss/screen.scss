@@ -84,7 +84,7 @@ body {
 	color: #222;	
 }
 
-a, a:link {
+a, a:link, a:visited {
 	color: $color2;
 	text-decoration: none;
 }
@@ -148,9 +148,7 @@ header {
 		padding: 0 15px;
 		height: 60px;
 		line-height: 60px;
-		font-size:  14px;
-		color: $gray1;
-		
+		font-size:  14px;		
 		span {
 			font-size: 12px;
 		}
@@ -458,8 +456,8 @@ padding: 5px;
 		border: 1px solid #000;
 		display: none;
 		position: absolute;
-		top:  0;
-		left: 0;
+		bottom:  -5px;
+		left: -2px;
 		width: 100%;
 		background: rgba(255,255,255,0.97);
 		padding: 5px;	
@@ -467,8 +465,8 @@ padding: 5px;
 	
 	.circle  {
 		position: absolute;
-		top: 5px;
-		right: 6px;
+		top: 4px;
+		right: 5px;
 	}
 	
 	&:hover .select-body {
@@ -485,7 +483,7 @@ padding: 5px;
 	
 	.group {
 		float: left;
-		width: 150px;
+		width: 210px;
 		line-height: 24px;
 		font-size: 15px;	
 		margin-bottom: 0.5em;
@@ -709,4 +707,37 @@ td.dotted + td {
 	z-index:  100;
 	@include border-radius(10px);
 	@include box-shadow(rgba(0,0,0,0.2), 2px, 2px, 5px, 0);
+}
+
+
+.gen-content {
+	width: 620px;
+	margin: 0 auto;
+	
+	h2 {
+		margin-top: 2em;
+		line-height: 1.5;
+	}
+	
+	h2:first-child {
+		margin-top: 0;
+	}
+	
+	p {
+		font-size: 15px;
+		line-height: 150%;
+	}
+}
+
+
+footer {
+	border-top:  1px solid #999;
+	margin-top: 40px;
+	padding: 10px;
+	font-size: 11px;
+	color: #999;
+}
+
+i {
+	font-style: italic;
 }
