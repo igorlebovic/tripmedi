@@ -4,11 +4,18 @@
 
 {% block content %}
 
-<body>
+<body id="checkout">
 {{ procedure_name }} {{ provider_name }} <a href="/checkout/{{ procedure_name }}/{{ provider_name }}/">next (receipt)</a>
   <div class="master-container">
 
 	{% header %}
+		
+	<div class="page-container" role="main">
+		<div class="checkout-form">
+		
+		</div>
+	</div>
+	
 	{% footer %}
     
     <div class="clearfix"></div>
