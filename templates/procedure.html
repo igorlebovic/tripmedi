@@ -5,7 +5,7 @@
 {% block content %}
 
 <body>
-{{ procedure_name }} <a href="/selection/{{ procedure_name }}/jose-carrera/">Dr. Jose Carrera</a></br></br>
+{{ procedure_name }} <a href="/selection/{{ selected_procedure.id }}/jose-carrera/">Dr. Jose Carrera</a></br></br>
   <div class="master-container">
 
 	{% header %}
@@ -18,7 +18,7 @@
 		
 				<div class="aside-part">
 					<h3>Popular Destinations</h3>
-					<p>Thailand, Malaysia, Greece</p>
+					<p>{{ random_country_list }}</p>
 					
 					<img src="/static/images/map.png">
 				</div>
@@ -48,7 +48,7 @@
 		<div class="content-area">
 		
 			<div class="content-header">
-				<h1>Breast Implant Operations</h1>
+				<h1>{{ selected_procedure.procedure_name }}</h1>
 				
 				<table class="results" cellpadding="0" cellspacing="0" border="0">
 					<thead>
@@ -71,7 +71,7 @@
 					<tbody>
 						<tr class="p-usa">
 							<td class="p-name">
-								Average treatment in<br/>
+								Average treatment in<br/>Christian Hospital
 								<span class="p-loc">United States</span>
 							</td>
 							<td class="p-rep p-rep-1">
@@ -80,7 +80,7 @@
 							</td>
 							<td class="p-cost p-cost-1">
 								<div>
-									$3421
+									${{ selected_procedure.united_states_comparative_price }}
 								</div>
 							</td>
 							<td class="p-travel p-travel-1">
@@ -98,10 +98,11 @@
 								</div>
 							</td>
 						</tr>
+                        {% for result in poss_providers %}
 						<tr class="p-usa">
 							<td class="p-name">
-								Christian Hospital<br/>
-								<span class="p-loc">Bangkok, Thailand</span>
+								{{ result.procedure.procedure_name }}<br/>
+								<span class="p-loc">{{ result.provider.country.country_name }}</span>
 								
 															
 							</td>
@@ -110,7 +111,7 @@
 							</td>
 							<td class="p-cost p-cost-4">
 								<div>
-									$342
+									${{ result.price }}
 								</div>							
 							</td>
 							<td class="p-travel p-travel-4">
@@ -128,7 +129,7 @@
 															
 							</td>
 						</tr>
-												
+						{% endfor %}
 					</tbody>
 				</table>
 				
