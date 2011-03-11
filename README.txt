@@ -13,7 +13,7 @@ ssh tripmedi@173.246.103.245 mysqldump –u tripmedi –opt tripmedi | mysql –
 
 RESTORE A BACKUP
 -----
-
+mysql -u tripmedi -p tripmedi < tripmedi.sql
 
 
 Tripit Developer API Codes
