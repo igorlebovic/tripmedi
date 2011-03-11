@@ -4,11 +4,20 @@
 
 {% block content %}
 
-<body>
-{{ procedure_name }} {{ provider_name }}
+<body id="checkout">
   <div class="master-container">
 
 	{% header %}
+		
+	<div class="page-container" role="main">
+		<div class="checkout-form">
+			<h1>Inquire {{ provider_name }} for {{ procedure_name }}</h1>
+				
+			<p>Your inquiry has been sent to {{ provider_name }}, who will contact you shortly for an estimate and further steps.</p>
+						
+		</div>
+	</div>
+	
 	{% footer %}
     
     <div class="clearfix"></div>

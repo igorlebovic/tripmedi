@@ -513,7 +513,21 @@ sup {
   padding-bottom: 5px;
 }
 
-/* line 411, ../scss/screen.scss */
+@-webkit-keyframes 'glow' {
+  /* line 412, ../scss/screen.scss */
+  0% {
+    border-color: rgba(100, 150, 255, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(183, 219, 74, 0.3);
+  }
+
+  /* line 416, ../scss/screen.scss */
+  100% {
+    border-color: #6496ff;
+    -webkit-box-shadow: 0 0 1px #b7db4a;
+  }
+}
+
+/* line 422, ../scss/screen.scss */
 .select {
   position: relative;
   width: 100%;
@@ -533,12 +547,18 @@ sup {
   background-image: linear-gradient(top, #000000 0%, #272727 100%);
   font-size: 20px;
   color: #ccc;
+  -webkit-box-shadow: 0 0 4px #6998ff;
+  -webkit-animation-name: 'glow';
+  -webkit-animation-duration: 0.5;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
 }
-/* line 421, ../scss/screen.scss */
+/* line 441, ../scss/screen.scss */
 .select .select-visible {
   padding: 5px 10px;
 }
-/* line 425, ../scss/screen.scss */
+/* line 445, ../scss/screen.scss */
 .select .select-body {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -555,11 +575,11 @@ sup {
   background: rgba(255, 255, 255, 0.97);
   padding: 5px;
 }
-/* line 437, ../scss/screen.scss */
+/* line 457, ../scss/screen.scss */
 .select:hover .select-body {
   display: block;
 }
-/* line 441, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .select h4 {
   float: left;
   width: 80px;
@@ -567,7 +587,7 @@ sup {
   margin-right: 10px;
   line-height: 24px;
 }
-/* line 449, ../scss/screen.scss */
+/* line 469, ../scss/screen.scss */
 .select .group {
   float: left;
   width: 150px;
@@ -575,46 +595,46 @@ sup {
   font-size: 15px;
   margin-bottom: 0.5em;
 }
-/* line 455, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .select .group a {
   display: block;
   color: #222;
 }
 
-/* line 464, ../scss/screen.scss */
+/* line 484, ../scss/screen.scss */
 #homepage {
   font-size: 16px;
 }
-/* line 466, ../scss/screen.scss */
+/* line 486, ../scss/screen.scss */
 #homepage .page-container {
   margin-top: -30px;
 }
-/* line 472, ../scss/screen.scss */
+/* line 492, ../scss/screen.scss */
 #homepage p {
   color: #333;
   line-height: 1.5;
 }
-/* line 477, ../scss/screen.scss */
+/* line 497, ../scss/screen.scss */
 #homepage li {
   line-height: 1.5;
 }
-/* line 481, ../scss/screen.scss */
+/* line 501, ../scss/screen.scss */
 #homepage .tagline {
   width: 460px;
   margin: 50px 0 20px;
   background: url(../images/icon2.png) 20px 50% no-repeat;
   padding-left: 140px;
 }
-/* line 487, ../scss/screen.scss */
+/* line 507, ../scss/screen.scss */
 #homepage .tagline p {
   font-weight: bold;
 }
-/* line 491, ../scss/screen.scss */
+/* line 511, ../scss/screen.scss */
 #homepage .tagline p span {
   padding: 1px 3px;
   background: #fc0;
 }
-/* line 498, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 #homepage aside {
   display: inline;
   float: left;
@@ -626,11 +646,11 @@ sup {
 * html #homepage aside {
   overflow-x: hidden;
 }
-/* line 502, ../scss/screen.scss */
+/* line 522, ../scss/screen.scss */
 #homepage aside .aside-content {
   padding: 20px;
 }
-/* line 509, ../scss/screen.scss */
+/* line 529, ../scss/screen.scss */
 #homepage .content-area {
   display: inline;
   float: left;
@@ -641,8 +661,9 @@ sup {
 * html #homepage .content-area {
   overflow-x: hidden;
 }
-/* line 513, ../scss/screen.scss */
-#homepage .faq {
+
+/* line 535, ../scss/screen.scss */
+.faq {
   display: inline;
   float: left;
   margin-right: 20px;
@@ -650,27 +671,28 @@ sup {
   font-size: 15px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #homepage .faq {
+* html .faq {
   overflow-x: hidden;
 }
-/* line 518, ../scss/screen.scss */
-#homepage .faq h2 {
+/* line 540, ../scss/screen.scss */
+.faq h2 {
   font-size: 20px;
   margin-top: 2em;
 }
 
-/* line 529, ../scss/screen.scss */
+/* line 548, ../scss/screen.scss */
 form label {
   font-size: 15px;
   font-weight: bold;
   color: #343232;
   display: block;
+  padding-bottom: 2px;
 }
-/* line 536, ../scss/screen.scss */
+/* line 556, ../scss/screen.scss */
 form label.long {
   font-size: 13px;
 }
-/* line 540, ../scss/screen.scss */
+/* line 560, ../scss/screen.scss */
 form .input-text, form textarea {
   font-size: 15px;
   border: 1px solid #b4b1b1;
@@ -679,8 +701,13 @@ form .input-text, form textarea {
   margin-bottom: 1em;
   width: 95%;
 }
+/* line 569, ../scss/screen.scss */
+form .if-you {
+  font-size: 12px;
+  color: #b4b1b1;
+}
 
-/* line 551, ../scss/screen.scss */
+/* line 576, ../scss/screen.scss */
 #selection aside {
   font-size: 15px;
   display: inline;
@@ -700,27 +727,27 @@ form .input-text, form textarea {
 * html #selection aside {
   overflow-x: hidden;
 }
-/* line 559, ../scss/screen.scss */
+/* line 584, ../scss/screen.scss */
 #selection aside img {
   margin-bottom: 20px;
 }
-/* line 563, ../scss/screen.scss */
+/* line 588, ../scss/screen.scss */
 #selection aside .flight, #selection aside .links {
   font-size: 13px;
 }
-/* line 567, ../scss/screen.scss */
+/* line 592, ../scss/screen.scss */
 #selection aside .links {
   margin-top: 5px;
 }
-/* line 570, ../scss/screen.scss */
+/* line 595, ../scss/screen.scss */
 #selection aside .links a {
   display: block;
 }
-/* line 575, ../scss/screen.scss */
+/* line 600, ../scss/screen.scss */
 #selection aside ul {
   font-size: 13px;
 }
-/* line 580, ../scss/screen.scss */
+/* line 605, ../scss/screen.scss */
 #selection .hospital-info {
   display: inline;
   float: left;
@@ -739,11 +766,11 @@ form .input-text, form textarea {
 #selection .hospital-info h3:first-child {
   margin-top: 0;
 }
-/* line 584, ../scss/screen.scss */
+/* line 609, ../scss/screen.scss */
 #selection .hospital-info table, #selection .hospital-info ul {
   line-height: 150%;
 }
-/* line 589, ../scss/screen.scss */
+/* line 614, ../scss/screen.scss */
 #selection .doctors {
   display: inline;
   float: left;
@@ -754,15 +781,15 @@ form .input-text, form textarea {
 * html #selection .doctors {
   overflow-x: hidden;
 }
-/* line 592, ../scss/screen.scss */
+/* line 617, ../scss/screen.scss */
 #selection .doctors .doctor {
   margin-bottom: 1em;
 }
-/* line 594, ../scss/screen.scss */
+/* line 619, ../scss/screen.scss */
 #selection .doctors .doctor h3 {
   margin-bottom: 5px;
 }
-/* line 601, ../scss/screen.scss */
+/* line 626, ../scss/screen.scss */
 #selection h1 {
   display: inline;
   float: left;
@@ -774,12 +801,12 @@ form .input-text, form textarea {
   overflow-x: hidden;
 }
 
-/* line 606, ../scss/screen.scss */
+/* line 631, ../scss/screen.scss */
 .more-container {
   height: 1em;
   position: relative;
 }
-/* line 610, ../scss/screen.scss */
+/* line 635, ../scss/screen.scss */
 .more-container .line {
   position: absolute;
   top: 50%;
@@ -788,7 +815,7 @@ form .input-text, form textarea {
   height: 1px;
   border-bottom: 1px solid #b4b1b1;
 }
-/* line 619, ../scss/screen.scss */
+/* line 644, ../scss/screen.scss */
 .more-container .link {
   position: absolute;
   top: 0;
@@ -797,22 +824,22 @@ form .input-text, form textarea {
   background-color: #fff;
 }
 
-/* line 628, ../scss/screen.scss */
+/* line 653, ../scss/screen.scss */
 td.dotted {
   background: url(../images/dots.png) repeat-x 0 50%;
 }
-/* line 631, ../scss/screen.scss */
+/* line 656, ../scss/screen.scss */
 td.dotted span {
   background-color: #fff;
   padding-right: 5px;
 }
 
-/* line 637, ../scss/screen.scss */
+/* line 662, ../scss/screen.scss */
 td.dotted + td {
   padding-left: 3px;
 }
 
-/* line 642, ../scss/screen.scss */
+/* line 667, ../scss/screen.scss */
 #checkout .page-container {
   padding-left: 240px;
   display: inline;
@@ -824,7 +851,12 @@ td.dotted + td {
 * html #checkout .page-container {
   overflow-x: hidden;
 }
-/* line 647, ../scss/screen.scss */
+/* line 672, ../scss/screen.scss */
 #checkout .checkout-form {
   background: #f6f4ed url(../images/noise50.png) repeat;
+  padding: 20px;
+}
+/* line 676, ../scss/screen.scss */
+#checkout .checkout-form .input-text {
+  width: 220px;
 }

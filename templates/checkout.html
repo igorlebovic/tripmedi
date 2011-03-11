@@ -5,14 +5,32 @@
 {% block content %}
 
 <body id="checkout">
-{{ procedure_name }} {{ provider_name }} <a href="/checkout/{{ procedure_name }}/{{ provider_name }}/">next (receipt)</a>
   <div class="master-container">
 
 	{% header %}
 		
 	<div class="page-container" role="main">
 		<div class="checkout-form">
-		
+			<h1>Inquire {{ provider_name }} for {{ procedure_name }}</h1>
+				
+			<form action="/checkout/{{ procedure_name }}/{{ provider_name }}/" method="POST">
+				<label>Full name</label>
+				<input type="text" class="input-text" />
+				<label>Email</label>
+				<input type="text" class="input-text" />    				
+				<label>Phone number <span class="if-you">(If you want us to call)</span></label>
+				<input type="text" class="input-text" />    				
+				<label>Location</label>
+				<input type="text" class="input-text" />
+				
+				<label class="long">Please tell us about your medical condition and<br> what sort of a treatment you are seeking.</label>
+				<textarea></textarea>
+				
+				<a class="a-button large">Send &raquo;</a>
+				<br><br>
+				
+			</form>
+						
 		</div>
 	</div>
 	

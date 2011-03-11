@@ -408,6 +408,17 @@ table.results {
 	}
 }
 
+@-webkit-keyframes 'glow' {
+	0% {
+	  border-color: rgba(100, 150, 255, .5);
+	  -webkit-box-shadow: 0 0 1px rgba(183, 219, 74, .3);
+	}
+	100% {
+	  border-color: rgba(100, 150, 255, 1);
+	  -webkit-box-shadow: 0 0 1px rgba(183, 219, 74, 1);
+	}
+}
+   
 .select {
 	position: relative;
 	width:  100%;
@@ -417,6 +428,15 @@ table.results {
 	@include linear-gradient(color-stops(#000, #272727));
 	font-size:  20px;
 	color:  #ccc;
+	
+
+	-webkit-box-shadow: 0 0 4px #6998ff;
+	-webkit-animation-name: 'glow';
+	-webkit-animation-duration: 0.5;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+		
 	
 	.select-visible {
 		padding: 5px 10px;
@@ -510,20 +530,19 @@ table.results {
 		@include column(8);
 	}
 	
-	.faq {
-		@include column(7);
-		
-		font-size: 15px;
-		
-		h2 {
-			font-size: 20px;
-			margin-top: 2em;
-		}
-	}
-	
-	
-
 }
+
+.faq {
+	@include column(7);
+	
+	font-size: 15px;
+	
+	h2 {
+		font-size: 20px;
+		margin-top: 2em;
+	}
+}
+
 
 form {
 	label {
@@ -531,6 +550,7 @@ form {
 		font-weight: bold;
 		color: $gray2;
 		display: block;
+		padding-bottom: 2px;
 	}
 	
 	label.long {
@@ -544,6 +564,11 @@ form {
 		font-family: inherit;
 		margin-bottom: 1em;
 		width: 95%;
+	}
+	
+	.if-you {
+		font-size:  12px;
+		color: $gray1;
 	}
 }
 
@@ -646,5 +671,10 @@ td.dotted + td {
 	
 	.checkout-form {
 		background: $box-bg url(../images/noise50.png) repeat;
+		padding:  20px;
+	
+		.input-text {
+			width: 220px;
+		}
 	}
 }
