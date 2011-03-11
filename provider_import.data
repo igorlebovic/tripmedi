@@ -1,0 +1,280 @@
+2|28|INCA Instituto Nacional de Câncer|||||31|http://www2.inca.gov.br/
+3|39|Salud Universitaria Catolica|||||64|http://www.med.puc.cl/
+4|28|Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo|||||93|http://www.hcnet.usp.br/
+5|8|Hospital Italiano de Buenos Aires|||||96|http://www.hospitalitaliano.org.ar/
+6|28|Hospital Israelita Albert Einstein Albert Einstein Sociedade Beneficente Israelita Brasileira|||||111|http://www.einstein.br/
+7|39|Hospital Clínico de la Universidad de Chile|||||237|http://www.redclinica.cl/
+8|28|Hospital de Clinicas de Porto Alegre|||||371|http://www.hcpa.ufrgs.br/
+9|28|Hospital Sirio Libanês|||||386|http://www.hospitalsiriolibanes.org.br/
+10|28|Instituto do Coração do Hospital das Clinicas|||||389|http://www.incor.usp.br/
+11|28|Hospital Universitário da Universidade Federal do Maranhão|||||548|http://www.huufma.br/
+12|28|Hospital Universitario Polydoro Ernani de São Thiago|||||567|http://www.hu.ufsc.br/
+13|198|Hospital de Clínicas Dr. Manuel Quintela Hospital Universitario|||||572|http://www.hc.edu.uy/
+14|28|Fleury Medicina e Saúde|||||578|http://www.fleury.com.br/
+15|148|Instituto de Investigaciones en Ciencias de la Salud|||||617|http://www.iics.una.py/
+16|28|Hospital de Clínicas da Universidade Federal do Paraná|||||642|http://www.hc.ufpr.br/
+17|8|Fundación Favaloro Hospital Universitario|||||666|http://www.fundacionfavaloro.org/
+18|124|Instituto Nacional de Enfermedades Respiratorias|||||740|http://www.iner.salud.gob.mx/
+19|8|Hospital Nacional Profesor Dr. Alejandro Posadas|||||784|http://www.hospitalposadas.gov.ar/
+20|28|Hospital das Clinicas da Universidade Federal de Minas Gerais|||||807|http://www.hc.ufmg.br/
+21|39|Clínica Alemana de Santiago de Chile|||||884|http://portal.alemana.cl/
+22|8|Centro de Educación Médica e Investigaciones Clínicas &ldquo;Norberto Quirno&rdquo;|||||919|http://www.cemic.edu.ar/
+23|124|Grupo Médica Sur|||||984|http://www.medicasur.com.mx/
+24|8|Hospital Privado de Comunidad|||||990|http://www.hpc.org.ar/
+25|28|Grupo Hospitalar Conceição/Hospital Conceição|||||1074|http://www.ghc.com.br/
+26|50|Hospital General Universitario Vladimir Ilich Lenin|||||1145|http://www.hvil.sld.cu/
+27|45|Instituto Nacional de Cancerología|||||1218|http://www.cancer.gov.co/
+28|8|FLENI Fundación para la Lucha contra las Enfermedades Neurológicas de la Infancia|||||1224|http://www.fleni.org.ar/
+29|50|Centro Internacional de Restauración Neorológica CIREN|||||1235|http://www.ciren.cu/
+30|8|Hospital Jose María Ramos Mejia|||||1245|http://www.ramosmejia.org.ar/
+31|28|Hospital de Clinicas Unicamp|||||1249|http://www.hc.unicamp.br/
+32|124|Hospital General de México|||||1318|http://www.hgm.salud.gob.mx/
+33|8|Hospital Universitario Austral|||||1358|http://www.hospitalaustral.edu.ar/
+34|8|Hospital Ramón Sarda Fundación Epson|||||1377|http://www.sarda.org.ar/
+35|28|Hospital Universitario da Usp|||||1400|http://www.hu.usp.br/
+36|8|Instituto de Inmuno Oncologia Dr. Ernesto J.V. Crescenti|||||1435|http://www.crescenti.com.ar/
+37|8|Hospital Privado Centro Médico de Córdoba|||||1496|http://www.hospitalprivadosa.com.ar/
+38|28|Hospital de Clinicas de Uberlândia|||||1548|http://www.hc.ufu.br/
+39|28|Hospital do Câncer a C. Camargo|||||1690|http://www.hcanc.org.br/
+40|149|Instituto Especializado de Enfermedades Neoplasicas Dr. Eduardo Caceres Graziani|||||1716|http://www.inen.sld.pe/
+41|149|Hospital Nacional Docente Madre Niño San Batolome|||||1819|http://www.sanbartolome.gob.pe/
+42|124|Hospital San José Tec de Monterrey|||||1894|http://www.hsj.com.mx/
+43|28|Hospital de Caridade de Erechim|||||1929|http://www.hce.com.br/
+44|8|Hospital de Niños Dr. Ricardo Gutierrez|||||1970|http://www.guti.gov.ar/
+45|28|Rede Sarah de Hospitais de Reabilitação|||||1986|http://www.sarah.br/
+46|95|Azienda Unità Sanitaria Locale di Forlì|||||span="5" align="right">|http://www.ausl.fo.it/
+47|75|University Clinic Heidelberg Universittsklinikum Heidelberg|||||25|http://www.klinikum.uni-heidelberg.de/
+48|66|Assistance Publique Hôpitaux de Paris|||||29|http://www.aphp.fr/
+49|180|Landstinget i Östergötland|||||39|http://www.lio.se/
+50|66|Centre Hospitalier Universitaire de Lyon Hôpitaux de Lyon|||||53|http://www.chu-lyon.fr/
+51|13|Graz University Hospital|||||56|http://www.meduni-graz.at/
+52|75|Universitätsklinikum und Medizinische Fakultät Tübingen|||||59|http://www.medizin.uni-tuebingen.de/
+53|177|Hôpitaux Universitaires de Geneve|||||63|http://www.hug-ge.ch/
+54|75|Universitätsklinikum Freiburg|||||68|http://www.uniklinik-freiburg.de/
+55|75|Universitätsklinikum Medizinische Fakultat der Martin Luther Universitat Halle Wittenberg|||||69|http://www.medizin.uni-halle.de/
+56|180|Norrbottens Lans Landsting|||||70|http://www.nll.se/
+57|61|Clínica Universitaria de Navarra|||||72|http://www.cun.es/
+58|138|Erasmus Medisch Centrum Universitait Medisch Centrum Rotterdam|||||78|http://www.erasmusmc.nl/
+59|90|Sligo General Hospital|||||80|http://www.hse.ie/
+60|177|Centre Hospitalier Universitaire Vaudois Lausanne|||||81|http://www.chuv.ch/
+61|75|Universitätsklinikum Hamburg Eppendorf|||||83|http://www.uke.de/
+62|13|Baby Center|||||86|http://www.babycenter.at/
+63|138|Academisch Medisch Centrum & Emma Kinderziekenhuis AMC Universiteit van Amsterdam|||||87|http://www.amc.nl/
+64|138|Leids Universitair Medisch Centrum|||||89|http://www.lumc.nl/
+65|75|Universitätsklinikum Leipzig Aör|||||90|http://www.uniklinikum-leipzig.de/
+66|95|Azienda Unità Sanitaria Locale di Modena|||||94|http://www.ausl.mo.it/
+67|75|HELIOS Kliniken Gruppe|||||98|http://www.helios-kliniken.de/
+68|177|Inselspital Universitatsspital Bern|||||104|http://www.insel.ch/
+69|62|Sihtasutus Tartu Ülikooli Kliinikum|||||105|http://www.kliinikum.ee/
+70|180|Landstinget I Uppsala Lan|||||107|http://www.lul.se/
+71|75|Klinikums der Universität München|||||118|http://www.klinikum.uni-muenchen.de/
+72|138|Universitair Medisch Centrum Utrecht|||||119|http://www.umcutrecht.nl/
+73|138|Vu Medical Center Amsterdam|||||122|http://www.vumc.nl/
+74|93|Clalit Health Services|||||129|http://www.clalit.co.il/
+75|138|Universitair Medisch Centrum St. Radboud|||||136|http://www.umcn.nl/
+76|61|Institut Municipal d'Investigació Médica Hospital del Mar|||||138|http://www.imim.es/
+77|95|Arcispedale S. Maria Nuova Azienda Ospedaliera di Reggio Emilia V|||||139|http://www.asmn.re.it/
+78|75|Rhön-Klinikum AG|||||141|http://www.rhoen-klinikum-ag.com/
+79|75|Universitätsklinikum Magdeburg|||||145|http://www.med.uni-magdeburg.de/
+80|93|Hadassah Medical Organization|||||147|http://www.hadassah.org.il/
+81|95|Fondazione Salvatore Maugeri Clinica del Lavoro e della Riabilitazione|||||154|http://www.fsm.it/
+82|52|Pediatricka Klinika 2. Lekarske Fakulty|||||159|http://www.lf2.cuni.cz/
+83|142|Helse Midt Norge Rhf Regionalt Helseføretak|||||160|http://www.helse-midt.no/
+84|75|Universitätsklinikum Dusseldorf|||||162|http://www.uniklinik-duesseldorf.de/
+85|53|Rigshospitalet|||||164|http://www.rigshospitalet.dk/
+86|177|UniverstätsSpitals Zürich|||||166|http://www.usz.ch/
+87|53|Odense Universitetshospital Svendborg Sygehus|||||170|http://www.ouh.dk/
+88|180|Karolinska Institute & University Hospital|||||180|http://www.karolinska.se/
+89|142|Rikshospitalet Radiumhosptalet|||||182|http://www.rikshospitalet.no/
+90|75|Klinikum und Fachbereich Medizin der Johann Wolfgang Goethe-Universität Frankfurt am Main|||||183|http://www.kgu.de/
+91|75|Saarland University Hospital|||||184|http://www.uniklinikum-saarland.de/
+92|66|Hôpitaux de Rouen*|||||186|http://www.chu-rouen.fr/
+93|66|L&rsquo;Institut Curie|||||186|http://www.curie.fr/
+94|169|Univerzitetni Klinicni Center Ljubljana|||||188|http://www4.kclj.si/
+95|95|Azienda Sanitaria Locale di Viterbo|||||194|http://www.asl.vt.it/
+96|180|Landstinget I Kalmar Lan Hospital of Vastervik|||||197|http://www.ltkalmar.se/
+97|65|Hospital District of Helsinki and Uusimaa|||||199|http://www.hus.fi/
+98|95|Fondazione dell'Ospedale Pediatrico Anna Meyer O.N.L.U.S.|||||202|http://www.meyer.it/
+99|52|Faculty Hospital BRNO|||||203|http://www.fnbrno.cz/
+100|92|Landspitalinn National University Hospital|||||207|http://www4.landspitali.is/
+101|75|Malteser Krankenhaus St. Franziskus Hospital|||||208|http://www.malteser.de/
+102|180|Sahlgrenska University Hospital|||||216|http://www.sahlgrenska.se/
+103|142|University Hospital of North Norway|||||217|http://www.unn.no/
+104|95|Azienda Ospedaliera S. Maria di Terni|||||219|http://www.aospterni.it/
+105|61|Hospital Regional Universitario Carlos Haya|||||221|http://www.carloshaya.net/
+106|75|Klinikum Greifswald Klinik und Poliklinik für Hautkrankheiten Universität Greifswald|||||225|http://www.medizin.uni-greifswald.de/
+107|53|Sct. Hans Hospital Psykiatrisk Center Sct. Hans|||||229|http://www.psykiatri-regionh.dk/
+108|95|Ospedale Sant Anna di Ferrara|||||231|http://www.ospfe.it/
+109|75|Klinikum Rechts der Isar|||||231|http://www.med.tu-muenchen.de/
+110|19|Universitair Ziekenhuis Leuven|||||233|http://www.uzleuven.be/
+111|75|Universitätsklinikum Ulm|||||243|http://www.uniklinik-ulm.de/
+112|75|Asklepios Klinikum Bad Abbach|||||246|http://www.asklepios.com/
+113|180|Akademiska Sjukhuset Uppsala University Hospital|||||247|http://www.akademiska.se/
+114|75|Uniklinik Köln - Klinikum der Universitat Zu Köln|||||255|http://www.uk-koeln.de/
+115|95|Azienda Sanitaria Locale nº 2 di Terni|||||257|http://www.asl4.terni.it/
+116|61|Hospital Vall d'Hebron|||||262|http://www.vhebron.net/
+117|155|Hospitais da Universidade de Coimbra|||||265|http://www.huc.min-saude.pt/
+118|169|Institute of Oncology Ljubljana|||||267|http://www.onko-i.si/
+119|193|Istanbul Universitesi Cerrahpasa Tip Fak. Hastanesi|||||271|http://www.ctf.edu.tr/
+120|66|Centre Hospitalier Universitaire de Toulouse|||||273|http://www.chu-toulouse.fr/
+121|95|Azienda Unità Sanitaria Locale di Ferrara|||||274|http://www.ausl.fe.it/
+122|61|Complejo Hospitalario Universitario de Albacete|||||277|http://www.chospab.es/
+123|61|Hospital de Cruces|||||289|http://www.hospitalcruces.com/
+124|66|L'Institut de Cancerologie Gustave Roussy|||||289|http://www.igr.fr/
+125|159|Medical Center Medlife|||||295|http://www.medlife.ro/
+126|193|Haydarpasa Gata Arastirma Hastanesi|||||297|http://www.gata.edu.tr/
+127|95|Azienda Ospedaliera San Camillo Forlanini|||||299|http://www.scamilloforlanini.rm.it/
+128|75|Universitätsklinikum Carl Gustav Carus Dresden|||||299|http://www.uniklinikum-dresden.de/
+129|95|Azienda Unità Sanitaria Locale di Reggio Emilia|||||322|http://www.ausl.re.it/
+130|138|Nederlands Kanker Instituut Antoni Van Leeuwenhoek Ziekenhuis|||||327|http://www.nki.nl/
+131|13|Wiener Krankenanstaltenverbund|||||333|http://www.wienkav.at/
+132|53|Aarhus University Hospital Aarhus Hospital|||||345|http://www.aarhussygehus.dk/
+133|61|Hospital Universitario Virgen de las Nieves|||||347|http://www.hvn.es/
+134|75|Universitätsklinikums Münster|||||351|http://www.klinikum.uni-muenster.de/
+135|180|Jamtlands Lands Landsting|||||352|http://www.jll.se/
+136|154|Instytut Psychiatrii i Neurologii|||||353|http://www.ipin.edu.pl/
+137|95|Azienda Unità Sanitaria Locale di Forlì|||||355|http://www.ausl.fo.it/
+138|40|Armed Police General Hospital|||||gn="left">|http://www.wj-hospital.com/
+139|190|Buddhist Tzu Chi General Hospital|||||4|http://www.tzuchi.com.tw/
+140|190|Taipei Veterans General Hospital|||||6|http://www.vghtpe.gov.tw/
+141|185|Faculty of Medicine Siriraj Hospital|||||21|http://www.si.mahidol.ac.th/
+142|84|Hospital Authority|||||26|http://www.ha.org.hk/
+143|99|Tokyo Women's Medical University Hospital|||||32|http://www.twmu.ac.jp/
+144|190|Chang Gung Memorial Hospital|||||33|http://www.cgmh.org.tw/
+145|185|Maharaj Nakorn Chiang Mai Hospital & Faculty of Medicine|||||34|http://www.med.cmu.ac.th/
+146|99|National Cancer Center Hospital|||||36|http://www.ncc.go.jp/
+147|104|Asan Medical Center Seoul|||||40|http://www.amc.seoul.kr/
+148|99|National Hospital Organization|||||43|http://www.hosp.go.jp/
+149|190|Mckay Memorial Hospital|||||48|http://www.mmh.org.tw/
+150|190|National Taiwan University Hospital|||||54|http://www.ntuh.gov.tw/
+151|89|Tabriz University Hospitals|||||67|http://www.tbzmed.ac.ir/
+152|99|Institute of Medical Science University of Tokyo|||||71|http://www.ims.u-tokyo.ac.jp/
+153|190|Chi Mei Medical Center|||||76|http://www.chimei.org.tw/
+154|104|Hallym University Medical Center|||||76|http://www.hallym.or.kr/
+155|190|Changhua Christian Hospital Changhua City|||||87|http://www.cch.org.tw/
+156|99|Nara Prefectural University Hospital|||||92|http://www.naramed-u.ac.jp/
+157|99|Fukushima Medical University Hospital|||||95|http://www.fmu.ac.jp/
+158|99|Asahikawa Medical College Hospital|||||99|http://www.asahikawa-med.ac.jp/
+159|190|China Medical University Hospital|||||102|http://www.cmuh.cmu.edu.tw/
+160|99|Kyoto University Hospital|||||103|http://www.kuhp.kyoto-u.ac.jp/
+161|190|Taipei City Hospital|||||108|http://www.tpech.gov.tw/
+162|99|Kyushu University Hospital|||||109|http://www.med.kyushu-u.ac.jp/
+163|190|Chung Ho Memorial Hospital Kaohsiung Medical University|||||110|http://www.kmuh.org.tw/
+164|190|Tri Service General Hospital|||||112|http://www.tsgh.ndmctsgh.edu.tw/
+165|190|Shin Kong Wu Ho Su Memorial Hospital|||||117|http://www.skh.org.tw/
+166|190|Kaohsiung Veterans General Hospital|||||121|http://cms03p.vghks.gov.tw/
+167|104|Samsung Medical Center|||||132|http://www.samsunghospital.com/
+168|190|Taichung Hospital|||||133|http://www.taic.doh.gov.tw/
+169|40|Xinqiao Hospital Third Military Medical University Hospital Newbridge|||||140|http://www.xqhospital.com.cn/
+170|190|Cathay General Hospital|||||143|http://www.cgh.org.tw/
+171|99|National Center of Neurology and Psychiatry|||||149|http://www.ncnp.go.jp/
+172|185|King Chulalongkorn Memorial Hospital Faculty of Medicine Chulalongkorn University|||||150|http://www.md.chula.ac.th/
+173|40|Rui Jin Hospital Shanghai Jiao Tong University School of Medicine|||||152|http://www.rjh.com.cn/
+174|190|Far Eastern Memorial Hospital|||||153|http://www.femh.org.tw/
+175|190|National Cheng Kung University Hospital|||||167|http://www.hosp.ncku.edu.tw/
+176|190|Kaohsiung Municipal Hsiaokang Hospital|||||173|http://www.kmhk.kmu.edu.tw/
+177|190|Chung Shan Medical University Hospital|||||177|http://w2.csh.org.tw/
+178|190|Taichung Veterans General Hospital|||||179|http://www.vghtc.gov.tw/
+179|104|Korea University Medical Center|||||181|http://www.kumc.or.kr/
+180|89|Hamedan University of Medical Science Hospitals|||||191|http://www.umsha.ac.ir/
+181|190|Chia-Yi Christian Hospital|||||193|http://www.cych.org.tw/
+182|99|Dokkyo Medical University Hospital|||||195|http://www.dokkyomed.ac.jp/
+183|99|Kyoto Prefectural Medical University Hospital|||||199|http://www.kpu-m.ac.jp/
+184|99|University of Tokyo Hospital|||||208|http://www.h.u-tokyo.ac.jp/
+185|185|Bma Medical College and Vajira Hospital|||||220|http://www.vajira.ac.th/
+186|40|Guangdong Provincial Disease Prevention and Control Centre|||||227|http://www.cdcp.org.cn/
+187|166|Singhealth|||||233|http://www.singhealth.com.sg/
+188|185|Faculty of Medicine Ramathibodi Hospital|||||239|http://www.ra.mahidol.ac.th/
+189|104|Cha General Hospital|||||241|http://www.chamc.co.kr/
+190|104|Seoul National University Hospital|||||244|http://www.snuh.org/
+191|104|Gachon University Gil Medical Center|||||251|http://www.gilhospital.com/
+192|40|Tianjin Medical University Hospital|||||256|http://www.tijmu.edu.cn/
+193|40|First People's Hospital of Foshan|||||263|http://www.fsyyy.com/
+194|190|Taipei Medical University Wan Fang Hospital|||||268|http://www.wanfang.gov.tw/
+195|104|Chonnam National University Hospital|||||269|http://www.cnuh.com/
+196|190|National Taiwan University Hospital Yun Lin Branch|||||280|http://www.ylh.ntuh.mc.ntu.edu.tw/
+197|190|Cardinal Tien Hospital|||||281|http://www.cth.org.tw/
+198|89|Guilan University Hospitals|||||304|http://www.gums.ac.ir/
+199|190|St. Martin de Porres Hospital|||||316|http://www.stm.org.tw/
+200|104|Kyung Hee University Medical Center|||||322|http://www.khmc.or.kr/
+201|190|Kuang Tien General Hospital|||||324|http://www.ktgh.com.tw/
+202|40|National Center for AIDS/STD Control and Prevention China CDC|||||328|http://www.chinaids.org.cn/
+203|190|Taipei Medical University Hospital|||||330|http://www.tmch.org.tw/
+204|166|Singapore General Hospital|||||331|http://www.sgh.com.sg/
+205|40|Zhongshan Hospital Fudan University|||||334|http://www.zs-hospital.sh.cn/
+206|99|National Center for Child Health and Development National Children's Medical Center Research Institute|||||354|http://www.ncchd.go.jp/
+207|40|Hospital Attached to Aeromedicine Institute of P.L.A.|||||358|http://www.81988888.com/
+208|104|National Cancer Center|||||363|http://www.ncc.re.kr/
+209|99|Osaka National Hospital|||||367|http://www.onh.go.jp/
+210|40|Anhui Provincial Hospital|||||368|http://www.ahslyy.com.cn/
+211|40|Beijing University People's Hospital|||||374|http://www.pkuph.cn/
+212|104|Ajou University Medical Center|||||375|http://www.ajoumc.or.kr/
+213|190|E Da Hospital / I Shou University|||||376|http://www.edah.org.tw/
+214|40|Guangdong Provincial People's Hospital|||||377|http://www.e5413.com/
+215|40|Cancer Institute & Hospital Chinese Academy of Medical Sciences|||||379|http://www.cicams.ac.cn/
+216|185|Queen Sirikit National Institute of Child Health|||||397|http://www.childrenhospital.go.th/
+217|104|Inje University Paik Hospital|||||404|http://www.paik.ac.kr/
+218|185|Phyathai Hospital Phya Thai's One Stop Center|||||417|http://www.phyathai.com/
+219|190|Cheng Hsin Rehabilitation Medical Center|||||428|http://www.chgh.org.tw/
+220|40|China Japan Friendship Hospital|||||432|http://www.zryhyy.com.cn/
+221|190|Landseed International Medical Group/Li Shin Hospital|||||434|http://www.ush.com.tw/
+222|190|Tungs' Taichung Metroharbor Hospital|||||435|http://www.sltung.com.tw/
+223|40|Foshan First People's Hospital|||||438|http://www.fshospital.org.cn/
+224|40|Sun Yat-sen University First Affiliated Hospital|||||438|http://www.gzsums.net/
+225|190|Hsin Chu General Hospital|||||442|http://www.hch.gov.tw/
+226|190|Taiwan Adventist Hospital|||||452|http://www.tahsda.org.tw/
+227|104|Inha University Hospital Incheon under Hangin Group|||||454|http://www.inha.com/
+228|88|Laparoscopy Hospital|||||455|http://www.laparoscopyhospital.com/
+229|99|University Hospital Kumamoto University|||||467|http://www.kuh.kumamoto-u.ac.jp/
+230|190|Keelung Hospital|||||469|http://www.kln.doh.gov.tw/
+231|99|Shizuoka Cancer Center Research Institute|||||472|http://www.scchr.jp/
+232|40|Beijing Tong Ren Hospital Capital Medical University|||||477|http://www.trhos.com/
+233|190|Mennonite Christian Hospital|||||487|http://www.mch.org.tw/
+234|185|Bumrungrad Internacional Hospital|||||490|http://www.bumrungrad.com/
+235|104|Severance Hospital|||||494|http://sev.iseverance.com/
+236|104|Seoul St. Mary's Hospital The Catholic University of Korea|||||497|http://www.cmcseoul.or.kr/
+237|104|Dongsan Medical Center Keimyung University Hospital|||||499|http://www.dsmc.or.kr/
+238|40|Armed Police General Hospital|||||500|http://www.wj-hospital.com/
+239|144|Waikato District Health Board|||||gn="left">|http://www.waikatodhb.govt.nz/
+240|12|Royal Children's Hospital|||||46|http://www.rch.org.au/
+241|12|Department Health & Human Services of Tasmania Royal Hobart Hospital|||||151|http://www.dhhs.tas.gov.au/
+242|12|Hunter New England Health|||||278|http://www.hnehealth.nsw.gov.au/
+243|144|Auckland District Health Board|||||283|http://www.adhb.govt.nz/
+244|12|Children's Hospital at Westmead|||||293|http://www.chw.edu.au/
+245|12|South Eastern Sydney Illawarra Health|||||342|http://www.sesiahs.health.nsw.gov.au/
+246|12|Cancer Institute Nsw|||||383|http://www.cancerinstitute.org.au/
+247|12|Women's and Children's Hospital Adelaide|||||393|http://www.wch.sa.gov.au/
+248|144|Capital & Coast District Health Board|||||412|http://www.ccdhb.org.nz/
+249|12|Sydney Children's Hospital|||||419|http://www.sch.edu.au/
+250|12|Southern Health|||||425|http://www.southernhealth.org.au/
+251|12|Sydney South West Area Health Service|||||534|http://www.sswahs.nsw.gov.au/
+252|12|Melbourne Health The Royal Melbourne Hospital|||||653|http://www.mh.org.au/
+253|12|St. Vicent's Health St. Vicent's Hospital Melbourne|||||825|http://www.svhm.org.au/
+254|12|Royal Adelaide Hospital|||||832|http://www.rah.sa.gov.au/
+255|12|Royal Women's Hospital|||||867|http://www.thewomens.org.au/
+256|12|Ramsay Health Care|||||1001|http://www.ramsayhealth.com.au/
+257|144|Counties Manukau District Health Board|||||1053|http://www.cmdhb.org.nz/
+258|12|South West Alliance of Rural Health|||||1086|http://www.swarh.com.au/
+259|12|Baker Heart Research Institute|||||1093|http://www.bakeridi.edu.au/
+260|12|St. John of God Health Care|||||1152|http://www.sjog.org.au/
+261|12|King Edward Memorial Hospital for Women|||||1313|http://www.kemh.health.wa.gov.au/
+262|12|Austin Health|||||1316|http://www.austin.org.au/
+263|12|Mercy Health & Aged Care|||||1334|http://www.mercy.com.au/
+264|12|Eastern Health Victoria|||||1381|http://www.easternhealth.org.au/
+265|144|Bay of Plenty District Health Board|||||1391|http://www.bopdhb.govt.nz/
+266|12|Sidney West Area Health Service|||||1415|http://www.wsahs.nsw.gov.au/
+267|12|Alfred Health Victoria|||||1455|http://www.alfred.org.au/
+268|144|Starship Children's Hospital|||||1483|http://www.starship.org.nz/
+269|12|Northern Health at Epping|||||1575|http://www.nh.org.au/
+270|12|Hume Health Service|||||1594|http://www.humehealth.com.au/
+271|144|Midcentral District Health Board|||||1688|http://www.midcentraldhb.govt.nz/
+272|12|Flinders Medical Centre|||||1700|http://www.flinders.sa.gov.au/
+273|12|Royal Perth Hospital|||||1798|http://www.rph.wa.gov.au/
+274|144|Nelson Marlborough District Health Board|||||1926|http://www.nmdhb.govt.nz/
+275|144|Waikato District Health Board|||||1955|http://www.waikatodhb.govt.nz/
+276|196|Angal Hospital|||||gn="left">|http://www.amicidiangal.org/
+277|160|Netcare Group|||||687|http://www.netcare.co.za/
+278|118|Institut Pasteur de Madagascar|||||1122|http://www.pasteur.mg/
+279|181|Gambro Healthcare|||||1227|http://www.gambro.com/
+280|140|Ecwa Evangel Hospital|||||1415|http://www.ecwaevangel.org/
+281|196|Angal Hospital|||||1880|http://www.amicidiangal.org/

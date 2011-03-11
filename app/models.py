@@ -59,7 +59,7 @@ class CountryExchangeRate(models.Model):
 # The healthcare provider - individual surgeons would enter their practice here
 class Provider(models.Model):
     country = models.ForeignKey(Country)
-    provider_name = models.CharField(max_length=100)
+    provider_name = models.CharField(max_length=150)
     provider_latitude = models.DecimalField(max_digits=17,decimal_places=14)
     provider_longitude = models.DecimalField(max_digits=17,decimal_places=14)
     last_accredited = models.DateTimeField()
