@@ -22,47 +22,16 @@
     				</div>
     				<div class="select-body">
 
-					<h3>Dental</h3>
+
+						{% for category in category_list%}
+						<h3>{{ category.medical_category_name }}</h3>
 						<div class="group">
+				            {% for procedure in category.medicalcategory_procedures.all|slice:":3"  %}
+							<a href="/procedure/{{ procedure.id }}/">{{ procedure.procedure_name }}</a>
 
-							<a href="/procedure/27/">Dental Implants / Tooth</a>
-
-
-							<a href="/procedure/28/">Dental Crowns</a>
-
-
-							<a href="/procedure/39/">Apicoectomy</a>
-
-
+				            {% endfor %}
 						</div>
-
-						<h3>Cosmetic</h3>
-						<div class="group">
-
-							<a href="/procedure/10/">Breast Augmentation</a>
-
-
-							<a href="/procedure/11/">Breast Reduction</a>
-
-
-							<a href="/procedure/12/">Eyelid Surgery</a>
-
-
-						</div>
-
-						<h3>Joint</h3>
-						<div class="group">
-
-							<a href="/procedure/1/">Hip replacement / resurfacing</a>
-
-
-							<a href="/procedure/2/">Knee replacement</a>
-
-
-							<a href="/procedure/22/">Rotator Cuff Repair</a>
-
-
-						</div> 
+				        {% endfor %}
 
     				</div>    				
     			</div>
