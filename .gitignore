@@ -1,6 +1,4 @@
 .gitignore
 .*
-*sql*
 *~
 *.pyc
-scrape.py
