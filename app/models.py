@@ -23,7 +23,7 @@ class EmailList(models.Model):
     signup_datetime = models.DateTimeField()
 
     def __unicode__(self):
-        return str(self.signup_datetime) + " " + self.email_address
+        return str(self.signup_datetime) + u" " + self.email_address
 
 
 class Country(models.Model):
@@ -53,7 +53,7 @@ class CountryExchangeRate(models.Model):
     last_refreshed_timestamp = models.IntegerField()
 
     def __unicode__(self):
-        return self.country.country_name + ": " + self.exchange_rate
+        return self.country.country_name + u' : ' + self.exchange_rate
 
 
 # The healthcare provider - individual surgeons would enter their practice here
@@ -68,7 +68,7 @@ class Provider(models.Model):
     provider_url = models.CharField(max_length=300)
 
     def __unicode__(self):
-        return self.provider_name + " - " + self.country.country_name
+        return self.provider_name + u' - ' + self.country.country_name
 
 
 # The medical procedure
@@ -103,7 +103,7 @@ class ProviderProcedure(models.Model):
     price_valid_until_timestamp = models.IntegerField()
 
     def __unicode__(self):
-        return self.procedure.procedure_name + " at " + self.provider.provider_name
+        return self.procedure.procedure_name + u" at " + self.provider.provider_name
 
 
 class MedicalCategory(models.Model):
@@ -126,7 +126,7 @@ class Surgeon(models.Model):
     surgeon_providers = models.ManyToManyField(Procedure,related_name="surgeon_providers")
 
     def __unicode__(self):
-        return "Dr. " + self.surgeon_first_name + " " + self.surgeon_last_name
+        return u"Dr. " + self.surgeon_first_name + " " + self.surgeon_last_name
 
 
 class SurgeonLanguage(models.Model):
@@ -150,4 +150,4 @@ class UserProviderProcedureSearch(models.Model):
     searched_on_datetime = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return str(self.searched_on_datetime) + " - " + self.procedure.procedure_name + " with " + self.provider.provider_name
+        return str(self.searched_on_datetime) + u" - " + self.procedure.procedure_name + " with " + self.provider.provider_name

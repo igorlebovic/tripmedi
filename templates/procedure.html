@@ -5,7 +5,7 @@
 {% block content %}
 
 <body>
-
+<a href="/selection/{{ selected_procedure.id }}/jose-carrera/">Dr. Jose Carrera</a></br></br>
   <div class="master-container">
 
 	{% header %}
@@ -102,7 +102,7 @@
 						<tr class="p-usa">
 							<td class="p-name">
 								{{ result.procedure.procedure_name }}<br/>
-								<span class="p-loc">{{ result.provider.country.country_name }}</span>
+								<span class="p-loc">{{ result.provider.provider_name }}</span>
 								
 															
 							</td>
@@ -116,14 +116,11 @@
 							</td>
 							<td class="p-travel p-travel-4">
 								<div class="p-travel-img">
-									<img src="/static/images/plane.png"><span>m5h</span>
+									<img src="/static/images/plane.png"><span>{{ hours|random }}h</span>
 								</div>
 							</td>
 							<td class="p-buttons">
-								<a class="a-button" href="">
-									Save »
-								</a>
-								<a class="a-button" href=""> 
+								<a class="a-button" href="/selection/{{ result.id  }}">
 									Get info »
 								</a>
 															
@@ -138,10 +135,9 @@
 		
     </div>
     
-       
-    <div class="clearfix"></div>
-
 	{% footer %}
+    
+    <div class="clearfix"></div>
 
   </div> 
 

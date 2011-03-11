@@ -5,7 +5,7 @@
 {% block content %}
 
 <body id="selection">
-{{ procedure_name }} {{ provider_name }} <a href="/checkout/{{ procedure_name }}/{{ provider_name }}/">next (checkout)</a>
+<a href="/checkout/{{ procedure_name }}/{{ provider_name }}/"></a>
   <div class="master-container">
 
 	{% header %}
@@ -15,7 +15,7 @@
 			<img src="/static/images/hospital1.jpg">
 			<div class="aside-content">
 				<h3>Location</h3>
-				<div class="city">Bangkok, Thailand</div>
+				<div class="city">{% if provider.city %}{{ provider.city }},{% endif %} {{ provider.country.country_name }} </div>
 				<div class="flight">16h from JFK with connections</div>
 				<div class="links">
 					<a href="">Flight information &raquo;</a>
@@ -34,7 +34,7 @@
 			</div>
 		</aside>
 		
-		<h1>Thai Hospital</h1>
+		<h1>{{ provider }} <a href="{{ provider.provider_url }}">>></a></h1>
 		
 			<div class="hospital-info">
 				<table cellpadding="0" cellspacing="0" border="0">

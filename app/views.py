@@ -10,7 +10,7 @@ import itertools
 import random
 
 def index2(request, template_name='index2.html'):
-    category_list = app.models.MedicalCategory.objects.all()
+    category_list = app.models.MedicalCategory.objects.all()[:3]
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
 def index(request, template_name='index.html'):
@@ -25,9 +25,11 @@ def procedure(request, procedure_name, template_name="procedure.html"):
 
     all_countries_count = poss_providers.count()
     random_country_list = ', '.join([str(x.provider.country.country_name) for x in poss_providers[:3]])
+    hours = range(3,20)
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
-def selection(request, procedure_name, provider_name, template_name="selection.html"):
+def selection(request, procedure_name, template_name="selection.html"):
+    provider = app.models.Provider.objects.get(pk=int(procedure_name))
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
 def checkout(request, procedure_name, provider_name, template_name="checkout.html"):
