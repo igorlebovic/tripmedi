@@ -98,10 +98,10 @@
 							</td>
 						</tr>
                         {% for result in poss_providers %}
-						<tr class="p-usa">
+						<tr>
 							<td class="p-name">
-								{{ result.procedure.procedure_name }}<br/>
-								<span class="p-loc">{{ result.provider.provider_name }}</span>
+								{{ result.procedure.provider_name }}<br/>
+								<span class="p-loc">{{ result.provider.city }}, {{ result.provider.country.country_name }}</span>
 								
 															
 							</td>
