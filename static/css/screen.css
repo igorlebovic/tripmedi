@@ -890,8 +890,12 @@ td.dotted + td {
 #checkout .checkout-form .input-text {
   width: 220px;
 }
+/* line 732, ../scss/screen.scss */
+#checkout .checkout-form h1 {
+  margin-bottom: 20px;
+}
 
-/* line 735, ../scss/screen.scss */
+/* line 739, ../scss/screen.scss */
 .bubble {
   font-size: 12px;
   font-weight: bold;
@@ -914,27 +918,27 @@ td.dotted + td {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
 }
 
-/* line 750, ../scss/screen.scss */
+/* line 754, ../scss/screen.scss */
 .gen-content {
   width: 620px;
   margin: 0 auto;
 }
-/* line 754, ../scss/screen.scss */
+/* line 758, ../scss/screen.scss */
 .gen-content h2 {
   margin-top: 2em;
   line-height: 1.5;
 }
-/* line 759, ../scss/screen.scss */
+/* line 763, ../scss/screen.scss */
 .gen-content h2:first-child {
   margin-top: 0;
 }
-/* line 763, ../scss/screen.scss */
+/* line 767, ../scss/screen.scss */
 .gen-content p {
   font-size: 15px;
   line-height: 150%;
 }
 
-/* line 770, ../scss/screen.scss */
+/* line 774, ../scss/screen.scss */
 footer {
   border-top: 1px solid #999;
   margin-top: 40px;
@@ -943,7 +947,7 @@ footer {
   color: #999;
 }
 
-/* line 778, ../scss/screen.scss */
+/* line 782, ../scss/screen.scss */
 i {
   font-style: italic;
 }
