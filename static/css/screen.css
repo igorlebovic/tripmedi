@@ -178,8 +178,8 @@ table td {
 /* line 131, ../scss/screen.scss */
 ul {
   margin: 0;
-  padding: 0 0 0 20px;
-  list-style: disc;
+  padding: 0 0 0 15px;
+  list-style: circle;
 }
 
 /* line 137, ../scss/screen.scss */
@@ -730,7 +730,7 @@ form .if-you {
   color: #b4b1b1;
 }
 
-/* line 619, ../scss/screen.scss */
+/* line 620, ../scss/screen.scss */
 #selection aside {
   font-size: 15px;
   display: inline;
@@ -750,27 +750,24 @@ form .if-you {
 * html #selection aside {
   overflow-x: hidden;
 }
-/* line 627, ../scss/screen.scss */
+/* line 628, ../scss/screen.scss */
 #selection aside img {
   margin-bottom: 20px;
 }
-/* line 631, ../scss/screen.scss */
-#selection aside .flight, #selection aside .links {
+/* line 632, ../scss/screen.scss */
+#selection aside .flight, #selection aside .links, #selection aside ul {
   font-size: 13px;
+  line-height: 1.5;
 }
-/* line 635, ../scss/screen.scss */
+/* line 637, ../scss/screen.scss */
 #selection aside .links {
   margin-top: 5px;
 }
-/* line 638, ../scss/screen.scss */
+/* line 640, ../scss/screen.scss */
 #selection aside .links a {
   display: block;
 }
-/* line 643, ../scss/screen.scss */
-#selection aside ul {
-  font-size: 13px;
-}
-/* line 648, ../scss/screen.scss */
+/* line 647, ../scss/screen.scss */
 #selection .hospital-info {
   display: inline;
   float: left;
@@ -789,11 +786,15 @@ form .if-you {
 #selection .hospital-info h3:first-child {
   margin-top: 0;
 }
-/* line 652, ../scss/screen.scss */
+/* line 651, ../scss/screen.scss */
 #selection .hospital-info table, #selection .hospital-info ul {
   line-height: 150%;
 }
-/* line 657, ../scss/screen.scss */
+/* line 655, ../scss/screen.scss */
+#selection .hospital-info p {
+  line-height: 1.25;
+}
+/* line 660, ../scss/screen.scss */
 #selection .doctors {
   display: inline;
   float: left;
@@ -804,32 +805,38 @@ form .if-you {
 * html #selection .doctors {
   overflow-x: hidden;
 }
-/* line 660, ../scss/screen.scss */
+/* line 663, ../scss/screen.scss */
 #selection .doctors .doctor {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
-/* line 662, ../scss/screen.scss */
+/* line 665, ../scss/screen.scss */
 #selection .doctors .doctor h3 {
   margin-bottom: 5px;
 }
-/* line 669, ../scss/screen.scss */
-#selection h1 {
+/* line 672, ../scss/screen.scss */
+#selection .ttop {
   display: inline;
   float: left;
   margin-right: 0;
   width: 700px;
+  margin-bottom: 30px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #selection h1 {
+* html #selection .ttop {
   overflow-x: hidden;
 }
+/* line 676, ../scss/screen.scss */
+#selection .ttop h1 {
+  margin-bottom: 10px;
+}
 
-/* line 674, ../scss/screen.scss */
+/* line 682, ../scss/screen.scss */
 .more-container {
+  margin-top: 5px;
   height: 1em;
   position: relative;
 }
-/* line 678, ../scss/screen.scss */
+/* line 687, ../scss/screen.scss */
 .more-container .line {
   position: absolute;
   top: 50%;
@@ -838,7 +845,7 @@ form .if-you {
   height: 1px;
   border-bottom: 1px solid #b4b1b1;
 }
-/* line 687, ../scss/screen.scss */
+/* line 696, ../scss/screen.scss */
 .more-container .link {
   position: absolute;
   top: 0;
@@ -847,22 +854,22 @@ form .if-you {
   background-color: #fff;
 }
 
-/* line 696, ../scss/screen.scss */
+/* line 705, ../scss/screen.scss */
 td.dotted {
   background: url(../images/dots.png) repeat-x 0 50%;
 }
-/* line 699, ../scss/screen.scss */
+/* line 708, ../scss/screen.scss */
 td.dotted span {
   background-color: #fff;
   padding-right: 5px;
 }
 
-/* line 705, ../scss/screen.scss */
+/* line 714, ../scss/screen.scss */
 td.dotted + td {
   padding-left: 3px;
 }
 
-/* line 710, ../scss/screen.scss */
+/* line 719, ../scss/screen.scss */
 #checkout .page-container {
   padding-left: 240px;
   display: inline;
@@ -874,17 +881,17 @@ td.dotted + td {
 * html #checkout .page-container {
   overflow-x: hidden;
 }
-/* line 715, ../scss/screen.scss */
+/* line 724, ../scss/screen.scss */
 #checkout .checkout-form {
   background: #f6f4ed url(../images/noise50.png) repeat;
   padding: 20px;
 }
-/* line 719, ../scss/screen.scss */
+/* line 728, ../scss/screen.scss */
 #checkout .checkout-form .input-text {
   width: 220px;
 }
 
-/* line 726, ../scss/screen.scss */
+/* line 735, ../scss/screen.scss */
 .bubble {
   font-size: 12px;
   font-weight: bold;
@@ -907,27 +914,27 @@ td.dotted + td {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
 }
 
-/* line 741, ../scss/screen.scss */
+/* line 750, ../scss/screen.scss */
 .gen-content {
   width: 620px;
   margin: 0 auto;
 }
-/* line 745, ../scss/screen.scss */
+/* line 754, ../scss/screen.scss */
 .gen-content h2 {
   margin-top: 2em;
   line-height: 1.5;
 }
-/* line 750, ../scss/screen.scss */
+/* line 759, ../scss/screen.scss */
 .gen-content h2:first-child {
   margin-top: 0;
 }
-/* line 754, ../scss/screen.scss */
+/* line 763, ../scss/screen.scss */
 .gen-content p {
   font-size: 15px;
   line-height: 150%;
 }
 
-/* line 761, ../scss/screen.scss */
+/* line 770, ../scss/screen.scss */
 footer {
   border-top: 1px solid #999;
   margin-top: 40px;
@@ -936,7 +943,7 @@ footer {
   color: #999;
 }
 
-/* line 769, ../scss/screen.scss */
+/* line 778, ../scss/screen.scss */
 i {
   font-style: italic;
 }
