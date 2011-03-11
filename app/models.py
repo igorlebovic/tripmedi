@@ -53,7 +53,7 @@ class CountryExchangeRate(models.Model):
     last_refreshed_timestamp = models.IntegerField()
 
     def __unicode__(self):
-        return self.country + ": " + self.exchange_rate
+        return self.country.country_name + ": " + self.exchange_rate
 
 
 # The healthcare provider - individual surgeons would enter their practice here
@@ -68,7 +68,7 @@ class Provider(models.Model):
     provider_url = models.CharField(max_length=300)
 
     def __unicode__(self):
-        return self.provider_name + " - " + self.country
+        return self.provider_name + " - " + self.country.country_name
 
 
 # The medical procedure
@@ -103,7 +103,7 @@ class ProviderProcedure(models.Model):
     price_valid_until_timestamp = models.IntegerField()
 
     def __unicode__(self):
-        return self.procedure + " at " + self.provider
+        return self.procedure.procedure_name + " at " + self.provider.provider_name
 
 
 class MedicalCategory(models.Model):
@@ -150,4 +150,4 @@ class UserProviderProcedureSearch(models.Model):
     searched_on_datetime = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return str(self.searched_on_datetime) + " - " + self.procedure + " with " + self.provider
+        return str(self.searched_on_datetime) + " - " + self.procedure.procedure_name + " with " + self.provider.provider_name
