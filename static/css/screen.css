@@ -1,3 +1,22 @@
+.gen-content {	
+background-attachment: scroll;
+background-clip: border-box;
+background-color: transparent;
+background-image: none;
+background-origin: padding-box;
+color: #333;
+display: block;
+font-family: 'Helvetica Neue', Arial;
+font-size: 15px;
+line-height: 22px;
+margin-bottom: 15px;
+margin-left: 60px;
+outline-color: #333;
+text-align: left;
+vertical-align: baseline;
+width: 540px;
+}
+
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
