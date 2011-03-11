@@ -30,23 +30,15 @@
     				</div>
     				<div class="select-body">
     				
-	    				<h3>Cosmetic</h3>	
-    					<div class="group">
-    						<a href="">Nip tuck</a>
-    						<a href="">Nip tuck</a>
-    						<a href="">Nip tuck</a>
-    						<a href="">Nip tuck</a>
-    					</div>
-    					
-    					<div class="clearfix"></div>
-    					
-						<h3>Medical</h3>	
+						{% for category in category_list %}
+						<h3>{{ category.medical_category_name }}</h3>
 						<div class="group">
-							<a href="">Hip replacement</a>
-    						<a href="">Nip tuck</a>
-    						<a href="">Nip tuck</a>
-    						<a href="">Nip tuck</a>
+				            {% for procedure in category.medicalcategory_procedures.all %}
+							<a href="/procedure/{{ procedure.id }}/">{{ procedure.procedure_name }}</a>
+				
+				            {% endfor %}
 						</div>
+				        {% endfor %}
 										    				
     				</div>    				
     			</div>
@@ -107,20 +99,7 @@
     			</form>
     		</div>
     	</aside>
-    	
-    	<div class="clearfix"></div>
-			
-		<h2>What kind of a procedure are you looking for?</h2>
 		
-		{% for category in category_list %}
-		<h3>{{ category.medical_category_name }}</h3>
-		<ul>
-            {% for procedure in category.medicalcategory_procedures.all %}
-			<li><a href="/procedure/{{ procedure.id }}/">{{ procedure.procedure_name }}</a></li>
-
-            {% endfor %}
-		</ul>
-        {% endfor %}
     </div>
     
 	{% footer %}

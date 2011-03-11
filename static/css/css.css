@@ -1,0 +1,45 @@
+/* center main content */
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	text-align: center;
+	min-width: 1080px;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 940px;
+	text-align: left;
+}
+
+/* header */
+
+#header {
+	height: 68px;
+}
+
+#logo {
+	width: 218px;
+}
+
+.header-item {
+	padding:  10px;
+	border-right: 1px;
+	border-color: grey;
+	float: left;
+}
+
+#login {
+	float:  right;
+}
+
+#clear {
+	clear: both;
+}
+
+#content {
+	border-top: 1px;
+	border-color: grey;
+}
