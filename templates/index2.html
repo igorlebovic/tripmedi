@@ -30,10 +30,10 @@
     				</div>
     				<div class="select-body">
     				
-						{% for category in category_list %}
+						{% for category in category_list%}
 						<h3>{{ category.medical_category_name }}</h3>
 						<div class="group">
-				            {% for procedure in category.medicalcategory_procedures.all %}
+				            {% for procedure in category.medicalcategory_procedures.all|slice:":3"  %}
 							<a href="/procedure/{{ procedure.id }}/">{{ procedure.procedure_name }}</a>
 				
 				            {% endfor %}
