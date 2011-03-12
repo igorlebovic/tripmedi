@@ -492,14 +492,16 @@ padding: 5px;
 	.select-body {
 		@include border-radius(10px);
 		border: 1px solid #000;
-		display: none;
 		position: absolute;
 		bottom:  -5px;
 		left: -2px;
 		width: 100%;
 		background: rgba(255,255,255,0.97);
 		padding: 5px;	
+		@include opacity(0);
+		-webkit-transition: opacity 0.3s linear;	
 	}
+	
 	
 	.circle  {
 		position: absolute;
@@ -507,8 +509,10 @@ padding: 5px;
 		right: 5px;
 	}
 	
-	&:hover .select-body {
+	&:hover .select-body {	
+		-webkit-transition: opacity 0.3s linear;
 		display: block;
+		opacity: 1;
 	}
 	
 	h3 {

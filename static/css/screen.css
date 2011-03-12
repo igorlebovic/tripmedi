@@ -594,25 +594,30 @@ sup {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #000;
-  display: none;
   position: absolute;
   bottom: -5px;
   left: -2px;
   width: 100%;
   background: rgba(255, 255, 255, 0.97);
   padding: 5px;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: opacity 0.3s linear;
 }
-/* line 504, ../scss/screen.scss */
+/* line 506, ../scss/screen.scss */
 .select .circle {
   position: absolute;
   top: 4px;
   right: 5px;
 }
-/* line 510, ../scss/screen.scss */
+/* line 512, ../scss/screen.scss */
 .select:hover .select-body {
+  -webkit-transition: opacity 0.3s linear;
   display: block;
+  opacity: 1;
 }
-/* line 514, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 .select h3 {
   float: left;
   width: 80px;
@@ -620,7 +625,7 @@ sup {
   margin-right: 10px;
   line-height: 24px;
 }
-/* line 522, ../scss/screen.scss */
+/* line 526, ../scss/screen.scss */
 .select .group {
   float: left;
   width: 210px;
@@ -628,46 +633,46 @@ sup {
   font-size: 15px;
   margin-bottom: 0.5em;
 }
-/* line 528, ../scss/screen.scss */
+/* line 532, ../scss/screen.scss */
 .select .group a {
   display: block;
   color: #222;
 }
 
-/* line 537, ../scss/screen.scss */
+/* line 541, ../scss/screen.scss */
 #homepage {
   font-size: 16px;
 }
-/* line 539, ../scss/screen.scss */
+/* line 543, ../scss/screen.scss */
 #homepage header {
   margin-bottom: 0;
 }
-/* line 545, ../scss/screen.scss */
+/* line 549, ../scss/screen.scss */
 #homepage p {
   color: #333;
   line-height: 1.5;
 }
-/* line 550, ../scss/screen.scss */
+/* line 554, ../scss/screen.scss */
 #homepage li {
   line-height: 1.5;
 }
-/* line 554, ../scss/screen.scss */
+/* line 558, ../scss/screen.scss */
 #homepage .tagline {
   width: 460px;
   margin: 50px 0 20px;
   background: url(../images/icon2.png) 20px 50% no-repeat;
   padding-left: 140px;
 }
-/* line 560, ../scss/screen.scss */
+/* line 564, ../scss/screen.scss */
 #homepage .tagline p {
   font-weight: bold;
 }
-/* line 564, ../scss/screen.scss */
+/* line 568, ../scss/screen.scss */
 #homepage .tagline p span.highlight {
   padding: 1px 3px;
   background: #fc0;
 }
-/* line 571, ../scss/screen.scss */
+/* line 575, ../scss/screen.scss */
 #homepage aside {
   display: inline;
   float: left;
@@ -679,11 +684,11 @@ sup {
 * html #homepage aside {
   overflow-x: hidden;
 }
-/* line 575, ../scss/screen.scss */
+/* line 579, ../scss/screen.scss */
 #homepage aside .aside-content {
   padding: 20px;
 }
-/* line 582, ../scss/screen.scss */
+/* line 586, ../scss/screen.scss */
 #homepage .content-area {
   display: inline;
   float: left;
@@ -695,7 +700,7 @@ sup {
   overflow-x: hidden;
 }
 
-/* line 588, ../scss/screen.scss */
+/* line 592, ../scss/screen.scss */
 .faq {
   display: inline;
   float: left;
@@ -707,13 +712,13 @@ sup {
 * html .faq {
   overflow-x: hidden;
 }
-/* line 593, ../scss/screen.scss */
+/* line 597, ../scss/screen.scss */
 .faq h2 {
   font-size: 20px;
   margin-top: 2em;
 }
 
-/* line 601, ../scss/screen.scss */
+/* line 605, ../scss/screen.scss */
 form label {
   font-size: 15px;
   font-weight: bold;
@@ -721,11 +726,11 @@ form label {
   display: block;
   padding-bottom: 2px;
 }
-/* line 609, ../scss/screen.scss */
+/* line 613, ../scss/screen.scss */
 form label.long {
   font-size: 13px;
 }
-/* line 613, ../scss/screen.scss */
+/* line 617, ../scss/screen.scss */
 form .input-text, form textarea {
   font-size: 15px;
   border: 1px solid #b4b1b1;
@@ -734,13 +739,13 @@ form .input-text, form textarea {
   margin-bottom: 1em;
   width: 95%;
 }
-/* line 622, ../scss/screen.scss */
+/* line 626, ../scss/screen.scss */
 form .if-you {
   font-size: 12px;
   color: #b4b1b1;
 }
 
-/* line 630, ../scss/screen.scss */
+/* line 634, ../scss/screen.scss */
 #selection aside {
   font-size: 15px;
   display: inline;
@@ -760,24 +765,24 @@ form .if-you {
 * html #selection aside {
   overflow-x: hidden;
 }
-/* line 638, ../scss/screen.scss */
+/* line 642, ../scss/screen.scss */
 #selection aside img {
   margin-bottom: 20px;
 }
-/* line 642, ../scss/screen.scss */
+/* line 646, ../scss/screen.scss */
 #selection aside .flight, #selection aside .links, #selection aside ul {
   font-size: 13px;
   line-height: 1.5;
 }
-/* line 647, ../scss/screen.scss */
+/* line 651, ../scss/screen.scss */
 #selection aside .links {
   margin-top: 5px;
 }
-/* line 650, ../scss/screen.scss */
+/* line 654, ../scss/screen.scss */
 #selection aside .links a {
   display: block;
 }
-/* line 657, ../scss/screen.scss */
+/* line 661, ../scss/screen.scss */
 #selection .hospital-info {
   display: inline;
   float: left;
@@ -796,15 +801,15 @@ form .if-you {
 #selection .hospital-info h3:first-child {
   margin-top: 0;
 }
-/* line 661, ../scss/screen.scss */
+/* line 665, ../scss/screen.scss */
 #selection .hospital-info table, #selection .hospital-info ul {
   line-height: 150%;
 }
-/* line 665, ../scss/screen.scss */
+/* line 669, ../scss/screen.scss */
 #selection .hospital-info p {
   line-height: 1.25;
 }
-/* line 670, ../scss/screen.scss */
+/* line 674, ../scss/screen.scss */
 #selection .doctors {
   display: inline;
   float: left;
@@ -815,15 +820,15 @@ form .if-you {
 * html #selection .doctors {
   overflow-x: hidden;
 }
-/* line 673, ../scss/screen.scss */
+/* line 677, ../scss/screen.scss */
 #selection .doctors .doctor {
   margin-bottom: 2em;
 }
-/* line 675, ../scss/screen.scss */
+/* line 679, ../scss/screen.scss */
 #selection .doctors .doctor h3 {
   margin-bottom: 5px;
 }
-/* line 682, ../scss/screen.scss */
+/* line 686, ../scss/screen.scss */
 #selection .ttop {
   display: inline;
   float: left;
@@ -835,18 +840,18 @@ form .if-you {
 * html #selection .ttop {
   overflow-x: hidden;
 }
-/* line 686, ../scss/screen.scss */
+/* line 690, ../scss/screen.scss */
 #selection .ttop h1 {
   margin-bottom: 10px;
 }
 
-/* line 692, ../scss/screen.scss */
+/* line 696, ../scss/screen.scss */
 .more-container {
   margin-top: 5px;
   height: 1em;
   position: relative;
 }
-/* line 697, ../scss/screen.scss */
+/* line 701, ../scss/screen.scss */
 .more-container .line {
   position: absolute;
   top: 50%;
@@ -855,7 +860,7 @@ form .if-you {
   height: 1px;
   border-bottom: 1px solid #b4b1b1;
 }
-/* line 706, ../scss/screen.scss */
+/* line 710, ../scss/screen.scss */
 .more-container .link {
   position: absolute;
   top: 0;
@@ -864,22 +869,22 @@ form .if-you {
   background-color: #fff;
 }
 
-/* line 715, ../scss/screen.scss */
+/* line 719, ../scss/screen.scss */
 td.dotted {
   background: url(../images/dots.png) repeat-x 0 50%;
 }
-/* line 718, ../scss/screen.scss */
+/* line 722, ../scss/screen.scss */
 td.dotted span {
   background-color: #fff;
   padding-right: 5px;
 }
 
-/* line 724, ../scss/screen.scss */
+/* line 728, ../scss/screen.scss */
 td.dotted + td {
   padding-left: 3px;
 }
 
-/* line 729, ../scss/screen.scss */
+/* line 733, ../scss/screen.scss */
 #checkout .page-container {
   padding-left: 240px;
   display: inline;
@@ -891,21 +896,21 @@ td.dotted + td {
 * html #checkout .page-container {
   overflow-x: hidden;
 }
-/* line 734, ../scss/screen.scss */
+/* line 738, ../scss/screen.scss */
 #checkout .checkout-form {
   background: #f6f4ed url(../images/noise50.png) repeat;
   padding: 20px;
 }
-/* line 738, ../scss/screen.scss */
+/* line 742, ../scss/screen.scss */
 #checkout .checkout-form .input-text {
   width: 220px;
 }
-/* line 742, ../scss/screen.scss */
+/* line 746, ../scss/screen.scss */
 #checkout .checkout-form h1 {
   margin-bottom: 20px;
 }
 
-/* line 749, ../scss/screen.scss */
+/* line 753, ../scss/screen.scss */
 .bubble {
   font-size: 12px;
   font-weight: bold;
@@ -929,27 +934,27 @@ td.dotted + td {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
 }
 
-/* line 765, ../scss/screen.scss */
+/* line 769, ../scss/screen.scss */
 .gen-content {
   width: 620px;
   margin: 0 auto;
 }
-/* line 769, ../scss/screen.scss */
+/* line 773, ../scss/screen.scss */
 .gen-content h2 {
   margin-top: 2em;
   line-height: 1.5;
 }
-/* line 774, ../scss/screen.scss */
+/* line 778, ../scss/screen.scss */
 .gen-content h2:first-child {
   margin-top: 0;
 }
-/* line 778, ../scss/screen.scss */
+/* line 782, ../scss/screen.scss */
 .gen-content p {
   font-size: 15px;
   line-height: 150%;
 }
 
-/* line 785, ../scss/screen.scss */
+/* line 789, ../scss/screen.scss */
 footer {
   border-top: 1px solid #999;
   margin-top: 40px;
@@ -958,7 +963,7 @@ footer {
   color: #999;
 }
 
-/* line 793, ../scss/screen.scss */
+/* line 797, ../scss/screen.scss */
 i {
   font-style: italic;
 }
