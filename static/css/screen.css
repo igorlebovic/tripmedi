@@ -342,10 +342,6 @@ table.results .p-rep-3 .p-rep-img {
 table.results .p-rep-4 .p-rep-img {
   background-position: 0 0;
 }
-/* line 286, ../scss/screen.scss */
-table.results .p-usa td {
-  padding-bottom: 0;
-}
 /* line 290, ../scss/screen.scss */
 table.results .p-cost div {
   font-size: 24px;
