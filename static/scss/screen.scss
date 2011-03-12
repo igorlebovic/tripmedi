@@ -745,6 +745,7 @@ td.dotted + td {
 	border: 4px solid #E8A800;
 	position: absolute;
 	top: 20px;
+	line-height: 150%;
 	right: 30px;
 	z-index:  100;
 	@include border-radius(10px);
