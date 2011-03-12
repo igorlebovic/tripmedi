@@ -344,6 +344,7 @@ table.results {
 
 	a.a-button {
 		//@include linear-gradient(color-stops(#F3F1EA, #DEDBD6), top);
+		background-color: #C3BEB5;
 		@include linear-gradient(color-stops(#E8E4D7, #C3BEB5), top);
 		-pie-background: linear-gradient(#F3F1EA, #DEDBD6);
 		@include box-shadow(rgba(255,255,255,1), 0, 1px, 0, 0, inset);
@@ -498,9 +499,10 @@ padding: 5px;
 		bottom:  -5px;
 		left: -2px;
 		width: 100%;
+		background: #fff;
 		background: rgba(255,255,255,0.97);
 		padding: 5px;	
-		@include opacity(0);
+		opacity: 0;
 		-webkit-transition: opacity 0.3s linear;	
 	}
 	
@@ -804,12 +806,10 @@ i {
 .ie7 .select-body,
 .ie8 .select-body {
 	display: none;
-	@include opacity(1);
 }
 
 .ie6 .select:hover .select-body,
 .ie7 .select:hover .select-body,
 .ie8 .select:hover .select-body {
 	display: block;
-	@include opacity(1);
 }	
