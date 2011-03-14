@@ -120,9 +120,11 @@ $("#thevideo").click(function() {
 				
 				<p>We are competing for StartupBus finals. Tweet or Facebook about us to support us. Thank you!</p>
 				
-				<p>				<a href="https://spreadsheets.google.com/embeddedform?formkey=dGVBODVuU2lyY1dGTC1Tdlg0b2o1MUE6MQ" class="iframe launchpage">Sign up to our list</a></p>
 				
-	
+				    {% if lightbox == True %}
+				    	<p><a href="https://spreadsheets.google.com/embeddedform?formkey=dGVBODVuU2lyY1dGTC1Tdlg0b2o1MUE6MQ" class="iframe launchpage">Sign up to our list</a></p>
+				    {% endif %}
+				
 			</div>
 			
 					

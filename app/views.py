@@ -11,6 +11,11 @@ import random
 
 def index2(request, template_name='index2.html'):
     category_list = tripmedi.app.models.MedicalCategory.objects.all()[:3]
+    lightbox = True
+    if 'cookie' in request.session:
+        lightbox = False
+    else:
+        request.session['cookie'] = 1
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
 def index(request, template_name='index2.html'):
