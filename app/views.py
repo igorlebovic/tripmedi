@@ -25,8 +25,9 @@ def procedure(request, procedure_name, template_name="procedure.html"):
     hours = range(3,20)
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
-def selection(request, procedure_name, template_name="selection.html"):
-    provider = tripmedi.app.models.Provider.objects.get(pk=int(procedure_name))
+def selection(request, procedure_id, provider_id, template_name="selection.html"):
+    provider = tripmedi.app.models.Provider.objects.get(pk=int(provider_id))
+    procedure = tripmedi.app.models.Procedure.objects.get(pk=int(procedure_id))
     return render_to_response(template_name, locals(), context_instance=RequestContext(request))
 
 def checkout(request, procedure_name, provider_name, template_name="checkout.html"):

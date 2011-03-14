@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% load filters %}
-
+{% load unicrap %}
 {% block content %}
 
 <body id="selection">
@@ -35,8 +35,8 @@
 		</aside>
 		
 		<div class="ttop">
-			<h1>{{ provider }} <!--<a href="{{ provider.provider_url }}">>></a>--></h1>
-			<a class="a-button large" href="/checkout/1/1">Contact &raquo;</a>
+			<h1>{{ provider|unicrap }}</h1>
+			<a class="a-button large" href="/checkout/{{ procedure.id }}/{{ provider.id }}">Contact &raquo;</a>
 		</div>
 		
 		
