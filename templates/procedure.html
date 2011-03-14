@@ -2,6 +2,7 @@
 
 {% load filters %}
 {% load humanize %}
+{% load unicrap %}
 
 {% block content %}
 
@@ -101,7 +102,7 @@
                         {% for result in poss_providers %}
 						<tr>
 							<td class="p-name">
-								{{ result.provider.provider_name }}<br/>
+								{{ result.provider.provider_name|unicrap }}<br/>
 								<span class="p-loc">{{ result.provider.country.country_name }}</span>
 								
 															
@@ -120,7 +121,7 @@
 								</div>
 							</td>
 							<td class="p-buttons">
-								<a class="a-button" href="/selection/{{ result.id  }}">
+								<a class="a-button" href="/selection/{{ selected_procedure.id }}/{{ result.id  }}/">
 									Get info »
 								</a>
 															
@@ -148,7 +149,7 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
              <!-- end disqus -->
 			</div>
 		</div>

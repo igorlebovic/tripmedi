@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% load filters %}
-
+{% load unicrap %}
 {% block content %}
 
 <body id="selection">
@@ -35,8 +35,8 @@
 		</aside>
 		
 		<div class="ttop">
-			<h1>{{ provider }} <!--<a href="{{ provider.provider_url }}">>></a>--></h1>
-			<a class="a-button large" href="/checkout/1/1">Contact &raquo;</a>
+			<h1>{{ provider|unicrap }}</h1>
+			<a class="a-button large" href="/checkout/{{ procedure.id }}/{{ provider.id }}">Contact &raquo;</a>
 		</div>
 		
 		
@@ -105,8 +105,15 @@
 				</div>
 				
 <div class="doctor">
-	<h2>Cole Haas M.D.</h2>
-	<p>Breast augmentation, Breast implants, Nose surgery</p>
+	<h2>Dr. Vijay C. Bose</h2>
+	<p>Orthopaedics: Hip Resurfacing, Hip Replacement, Knee Replacement</p>
+	
+	<ul>
+		<li>M.Med.Sci (Trauma), University of Birmingham Medical School</li>
+		<li>MCh (Orth), University of Liverpool Faculty of Medicine</li>
+		<li>Fellowship of the Royal College of Surgeons, UK</li>
+	</ul>
+
 	
 	<h3>Past appointments</h3>
 	<table cellpadding="0" cellspacing="0" border="0">

@@ -62,11 +62,12 @@ class Provider(models.Model):
     provider_name = models.CharField(max_length=150)
     provider_latitude = models.DecimalField(max_digits=17,decimal_places=14)
     provider_longitude = models.DecimalField(max_digits=17,decimal_places=14)
-    provider_traveltime = models.DecimalField(max_digits=17,decimal_places=14)
     last_accredited = models.DateTimeField()
     city = models.CharField(max_length=50)
     provider_region_rank = models.IntegerField()
     provider_url = models.CharField(max_length=300)
+    flight_time = models.IntegerField(null=True)
+    provider_info = models.TextField(null=True)
 
     def __unicode__(self):
         return self.provider_name + u' - ' + self.country.country_name
@@ -102,6 +103,7 @@ class ProviderProcedure(models.Model):
     procedure_rank = models.IntegerField()
     price = models.DecimalField(max_digits=10,decimal_places=2)
     price_valid_until_timestamp = models.IntegerField()
+
 
     def __unicode__(self):
         return self.procedure.procedure_name + u" at " + self.provider.provider_name
