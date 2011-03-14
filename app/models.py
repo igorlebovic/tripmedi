@@ -101,6 +101,8 @@ class ProviderProcedure(models.Model):
     procedure_rank = models.IntegerField()
     price = models.DecimalField(max_digits=10,decimal_places=2)
     price_valid_until_timestamp = models.IntegerField()
+    flight_time = models.IntegerField(null=True)
+    provider_info = models.TextField(null=True)
 
     def __unicode__(self):
         return self.procedure.procedure_name + u" at " + self.provider.provider_name
