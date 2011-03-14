@@ -62,6 +62,7 @@ class Provider(models.Model):
     provider_name = models.CharField(max_length=150)
     provider_latitude = models.DecimalField(max_digits=17,decimal_places=14)
     provider_longitude = models.DecimalField(max_digits=17,decimal_places=14)
+    provider_traveltime = models.DecimalField(max_digits=17,decimal_places=14)
     last_accredited = models.DateTimeField()
     city = models.CharField(max_length=50)
     provider_region_rank = models.IntegerField()
