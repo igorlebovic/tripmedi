@@ -10,13 +10,8 @@
 <script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <link rel="stylesheet" type="text/css" href="/static/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".bubble").css("top", "-60px").delay("1000").animate({top: "20px"}, 2000);
-});
-</script>
-
 <body id="homepage">
+
 
   <div class="master-container">
 
@@ -114,12 +109,13 @@ $("#thevideo").click(function() {
     	</div>
     	
     	<aside>
-			<div class="aside-content">
-				<h1>Vote for us!</h1>
+			<div class="aside-content" style="font-size: 15px; line-height: 1.5;">
+			
+				<h1>Support us!</h1>
 				
-				<p style="font-size: 15px; line-height: 1.5;">We're competing in StartupBus! <br><a href="http://startupbus.com/teams/47-tripmedi">Go to this link</a>, register, find TripMedi and rate us!</p>
+				<p>We are competing for StartupBus finals. Tweet or Facebook about us to support us. Thank you!</p>
 				
-				
+				<p>				<a href="https://spreadsheets.google.com/embeddedform?formkey=dGVBODVuU2lyY1dGTC1Tdlg0b2o1MUE6MQ" class="iframe launchpage">Sign up to our list</a></p>
 				
 	
 			</div>
@@ -153,5 +149,7 @@ $("#thevideo").click(function() {
 	{% footer %}
 
   </div>
+
+
 
 {% endblock %}
